@@ -1,0 +1,43 @@
+[
+	{"name": "The Guiding Key", "count":4, "progression":true, "category": ["Location Keys"]},
+	{"name": "The Curious Key", "count":2, "progression":true, "category": ["Location Keys"]},
+	{"name": "The Hotel Key",	"count":2, "progression":true, "category": ["Location Keys", "FloorKeys"]},
+	{"name": "The Mines Key",	"count":3, "progression":true, "category": ["Location Keys", "FloorKeys", "Floor2"]},
+
+	{"name": "Lockpick", 			"count":1, "progression":true, "category": ["Items"]},
+	{"name": "Progressive Candle", 	"count":2, "progression":true, "category": ["Items"]},
+	{"name": "Crucifix", 			"count":1, "progression":true, "category": ["Items"]},
+	{"name": "Skeleton Key", 		"count":1, "progression":true, "category": ["Items"]},
+	{"name": "Progressive Smoothie","count":2, "progression":true, "category": ["Items"]},
+	{"name": "Flashlight",			"count":1, "useful":true, "category": ["Items"]},
+	{"name": "Lighter", 			"count":1, "useful":true, "category": ["Items"]},
+	{"name": "Vitamins", 			"count":1, "useful":true, "category": ["Items"]},
+	{"name": "Alarm Clock", 		"count":1, "useful":true, "category": ["Items"]},
+	{"name": "Shears",				"count":1, "useful":true, "category": ["Items"]},
+
+	{"name": "Glowstick", 			"count":1, "progression":true, "category": ["Items", "Floor2"]},
+	{"name": "Gween Soda",			"count":1, "progression":true, "category": ["Items", "Floor2"]},
+	{"name": "Straplight", 			"count":1, "useful":true, "category": ["Items", "Floor2"]}, 
+	{"name": "Bulklight", 			"count":1, "useful":true, "category": ["Items", "Floor2"]},
+	{"name": "Laser Pointer", 		"count":1, "useful":true, "category": ["Items", "Floor2"]},
+	{"name": "Battery Pack", 		"count":1, "useful":true, "category": ["Items", "Floor2"]},
+	{"name": "Bandage Pack", 		"count":1, "useful":true, "category": ["Items", "Floor2"]},
+	{"name": "Cheese",				"count":1, "useful":true, "category": ["Items", "Floor2"]},
+	{"name": "Bread",				"count":1, "useful":true, "category": ["Items", "Floor2"]},
+
+	{"name": "Gummy Flashlight", 	"count":1, "useful":true, "category": ["Items"]},
+	{"name": "Starlight Liquids",	"count":1, "useful":true, "category": ["Items"]},
+
+	{"name": "The Rift", 	 "count":1,"progression":true, "category": ["Mechanics"]},
+	{"name": "Modifiers",    "count":1,"progression":true, "category": ["Mechanics"]},
+	{"name": "Pre-Run Shop", "count":1,"useful":true, "category": ["Mechanics"]},
+
+	{"name": "Killed",  "count":4, "trap":true, "category": ["Traps"]},
+	{"name": "Damaged", "count":4, "trap":true, "category": ["Traps"]},
+	{"name": "Frozen",  "count":3, "trap":true, "category": ["Traps"]},
+
+	{"name": "Death Pack",				"count":10, "useful":true, "category": ["Filler Items", "HundredOfMany"]},
+	{"name": "Temporary Light-source",	"count":0, "filler":true, "category": ["Filler Items"]},
+	{"name": "Temporary Utility",		"count":0, "filler":true, "category": ["Filler Items"]},
+	{"name": "Pre-Run Shop Purchase",	"count":0, "filler":true, "category": ["Filler Items"]}
+]

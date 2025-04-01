@@ -1,0 +1,27 @@
+{
+    "WelcomeBack":          {"hidden": true, "yaml_option": ["welcome_back"]},
+    "BuddySystem":          {"hidden": true, "yaml_option": ["buddy_system"]},
+    "Betrayal":             {"hidden": true, "yaml_option": ["betrayal"]}, 
+    "HundredOfMany":        {"hidden": true, "yaml_option": ["hundred_of_many"]},
+
+    "Error":                {"hidden": true, "yaml_option": ["error"]},
+    "MeetJack":             {"hidden": true, "yaml_option": ["meet_jack"]},
+    "TrialAndError":        {"hidden": true, "yaml_option": ["trial_and_error"]},
+    "HelpingHand":          {"hidden": true, "yaml_option": ["helping_hand"]},
+
+    "VoidRelated":          {"hidden": true, "yaml_option": ["void_related"]},
+    "SallyRelated":         {"hidden": true, "yaml_option": ["sally_related"]},
+    
+    "A1000":                {"hidden": true, "yaml_option": ["a_1000"]},
+    "HotelHell":            {"hidden": true, "yaml_option": ["hotel_hell"]},
+    "AHardPlace":           {"hidden": true, "yaml_option": ["a_hard_place"]},
+
+    "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
+    "Floor2":               {"hidden": true, "yaml_option": ["floor_2"]},
+    "FloorKeys":            {"hidden": true, "yaml_option": ["individual_floor_keys"]},
+    "doorsanity":           {"hidden": true},
+    "notsimple_doorsanity": {"hidden": true},
+    
+    "misc_options": {"hidden":true, "yaml_option": ["doorsanity", "rooms_doorsanity"]}
+}
+

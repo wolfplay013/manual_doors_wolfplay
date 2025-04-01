@@ -1,0 +1,13 @@
+{
+	"The Lobby": 	{"connects_to": ["The Hotel 0", "The Mines 0"], "requires": "", "starting": true},
+
+	"The Hotel 0": 	{"connects_to": ["The Hotel 1"], 				"requires": ""},
+	"The Hotel 1": 	{"connects_to": ["The Hotel 2", "The Rooms"], 	"requires": "|The Guiding Key:1| OR |The Hotel Key:1|"},
+	"The Hotel 2": 	{"connects_to": [], 							"requires": "|The Guiding Key:2| OR |The Hotel Key:2|"},
+	"The Mines 0": 	{"connects_to": ["The Mines 1"], 				"requires": "|The Guiding Key:2| OR |The Mines Key:1|"},
+	"The Mines 1": 	{"connects_to": ["The Mines 2"], 				"requires": "|The Guiding Key:3| OR |The Mines Key:2|"},
+	"The Mines 2": 	{"connects_to": [], 			 				"requires": "|The Guiding Key:4| OR |The Mines Key:3|"},
+
+	"The Rooms": 	{"connects_to": ["The Backdoor"], "requires": "|Skeleton Key| AND |Lockpick| AND (|The Curious Key:1| OR |The Hotel Key:1|)"},
+	"The Backdoor": {"connects_to": [], "requires": "|The Curious Key:2|"}
+}	
