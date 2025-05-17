@@ -16,40 +16,16 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item: ManualItem
     options = multiworld.worlds[player].options
     
     if not options.hundred_of_many == "with_death_item":
-        if "HundredOfMany" or "HundredOfManyDL" in item["category"]:
+        if "HundredOfMany" in item["category"]:
             return False
         else:
-            if not options.death_link.value:
-                if "HundredOfManyDL" in item["category"]:
-                    return False
-                else:
-                    return None
-            else:
-                if "HundredOfMany" in item["category"]:
-                    return False
-                else:
-                    return None
+            return None
 
 # Use this if you want to override the default behavior of is_option_enabled
 # Return True to enable the location, False to disable it, or None to use the default behavior
 def before_is_location_enabled(multiworld: MultiWorld, player: int, location: ManualLocation) -> Optional[bool]:
 
     options = multiworld.worlds[player].options
-
-    if not options.hundred_of_many == "with_death_item":
-        if "HundredOfMany" or "HundredOfManyDL" in location["category"]:
-            return False
-        else:
-            if not options.death_link.value:
-                if "HundredOfManyDL" in location["category"]:
-                    return False
-                else:
-                    return None
-            else:
-                if "HundredOfMany" in location["category"]:
-                    return False
-                else:
-                    return None
 
     if not options.doorsanity:
         if "doorsanity" in location["category"]:

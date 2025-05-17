@@ -36,8 +36,7 @@
 	{"name": "Freeze Trap",  "count":0, "trap":true, "category": ["Traps"]},
 	{"name": "Butterfingers Trap",  "count":0, "trap":true, "category": ["Traps"]},
 
-	{"name": "Death Pack",				"count":10, "useful":true, "category": ["Filler Items", "HundredOfMany"]},
-	{"name": "Death Pack",				"count":10, "progression":true, "category": ["Filler Items", "HundredOfManyDL"]},
+	{"name": "Death Pack",				"count":10, "progression":true, "category": ["Filler Items", "HundredOfMany"]},
 	{"name": "Temporary Light-source",	"count":0, "filler":true, "category": ["Filler Items"]},
 	{"name": "Temporary Utility",		"count":0, "filler":true, "category": ["Filler Items"]},
 	{"name": "Pre-Run Shop Purchase",	"count":0, "filler":true, "category": ["Filler Items"]},

@@ -59,7 +59,7 @@ class option_HundredOfMany(Choice):
     Encounter your hundredth death.
 
     This achievement should be disabled when you are playing in a sync, or when you have death link enabled, or when you just don't like tedious tasks.
-    If 'with_death_item' is chosen, you unlock an additional item that give you 10 deaths for this achievement. These are not balanced unless Death Link is enabled."""
+    If 'with_death_item' is chosen, you unlock an additional item that give you 10 deaths for this achievement. These are balanced to require 9 Death Packs."""
     display_name = "Hundred Of Many"
     option_with_death_item = 0
     option_enabled = 1

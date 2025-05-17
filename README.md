@@ -36,11 +36,11 @@ The player can get traps that hinder them in their journey.
 
 ## what are the available options?
 
-You may disable achievements that could be concidered "Multiplayer", "Sync Unfriendly", "Tedious".
+You may disable achievements that could be concidered **Multiplayer**, **Sync Unfriendly**, **Tedious**.
 
-These are the achievements under these categories: "Welcome Back", "Buddy System", "Betrayal", "Hundred Of Many", "Error", "Meet Jack", "Trial And Error", "Helping Hand", "A-1000", "Hotel Hell", and "A Hard Place".
+These are the achievements under these categories: **Welcome Back**, **Buddy System**, **Betrayal**, **Hundred Of Many**, **Error**, **Meet Jack**, **Trial And Error**, **Helping Hand**, **A-1000**, **Hotel Hell**, and **A Hard Place**.
 
-Additionally, a few achievements are bundled together, these are: "It Stares Back" & "Lost In The Dark", "Playtime" & "Playtime's Over", and All of the Crucifix Achievements.
+Additionally, a few achievements are bundled together, these are: **It Stares Back** & **Lost In The Dark**, **Playtime** & **Playtime's Over**, and All of the Crucifix Achievements.
 
 There are a few special settings that may alter the gameplay in a major way.
 - **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.
@@ -56,6 +56,6 @@ There are some system settings that are supported by the manual.
 
 ## misc information
 
-You may discuss the manual in the Archipelago Manual discord server, in the Doors thread. [Find the discord here](https://discord.gg/T5bcsVHByx), [Find the thread here](https://canary.discord.com/channels/1097532591650910289/1230046028799934464)
+You may discuss the manual in the Archipelago Manual discord server, right within the Doors thread. [Find the discord here](https://discord.gg/T5bcsVHByx), [Find the thread here](https://canary.discord.com/channels/1097532591650910289/1230046028799934464)
 
 "Doors Archipelago Logo", is adapted from the [Archipelago Logo](https://canary.discord.com/channels/731205301247803413/874776082946064394/1009265363600556094) (linked to the official discord) by Krista Corkos and Christopher Wilson, used under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/).
