@@ -12,9 +12,6 @@ Victory is achieved when the player escapes The Backdoor.
 ## what are the available items?
 The player can get keys which unlock certain milestones in the main floors, or certain subfloors.
 - **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game. If the "Individual Floor Keys" setting is enabled, the following items are used instead.
-- **The Hotel Key** & **The Mines Key** Enabled with an experimental settings, if you do not plan on enabling it, you may skip this part. Every key has 3 stages (except for The Hotel Key which skips the 1st stage), the first stage unlocks the actual floor, second stage unlocks the mid-way point & third stage unlocks the end of the floor. You may see the specific door numbers below.
- - **The Hotel Key** Stage one unlocks Door 50, Stage two unlocks Door 100. The "floor unlock" stage is skipped because this is the first floor.
- - **The Mines Key** Stage one unlocks the floor, Stage two unlocks Door 142, Stage 3 unlocks Door 200.
 - **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms subfloor, the second stage unlocks The Backdoor subfloor.
 
 The player can also get items that unlock items, every item in doors is a single item in the multiworld, however there are a few exceptions to this.
