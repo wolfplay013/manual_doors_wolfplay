@@ -77,7 +77,7 @@ def after_load_location_file(location_table: list) -> list:
     temporary_count = -50
     while temporary_count != 0:
         door_sanity.append({
-            'name': f'Door {temporary_count} - The Backdoor',
+            'name': f'Door {"%02d" % temporary_count} - The Backdoor',
             'region': 'The Backdoor',
             'category': ["Doorsanity (Backdoor)", "doorsanity"]
         })

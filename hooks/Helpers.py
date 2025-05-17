@@ -1,5 +1,5 @@
 from typing import Optional
-from BaseClasses import MultiWorld
+from BaseClasses import MultiWorld # type: ignore
 from ..Locations import ManualLocation
 from ..Items import ManualItem
 
@@ -16,10 +16,19 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item: ManualItem
     options = multiworld.worlds[player].options
     
     if not options.hundred_of_many == "with_death_item":
-        if "HundredOfMany" in item["category"]:
+        if "HundredOfMany" or "HundredOfManyDL" in item["category"]:
             return False
         else:
-            return None
+            if not options.death_link.value:
+                if "HundredOfManyDL" in item["category"]:
+                    return False
+                else:
+                    return None
+            else:
+                if "HundredOfMany" in item["category"]:
+                    return False
+                else:
+                    return None
 
 # Use this if you want to override the default behavior of is_option_enabled
 # Return True to enable the location, False to disable it, or None to use the default behavior

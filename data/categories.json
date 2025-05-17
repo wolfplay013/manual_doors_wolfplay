@@ -21,6 +21,9 @@
     "FloorKeys":            {"hidden": true, "yaml_option": ["individual_floor_keys"]},
     "doorsanity":           {"hidden": true},
     "notsimple_doorsanity": {"hidden": true},
+    "veryhigh_doorsanity":  {"hidden": true},
+    "HundredOfManyDL":      {"hidden": true},
+    "UnusedAchievements":   {"hidden": true, "yaml_option": ["unused_achievements"]},
     
     "misc_options": {"hidden":true, "yaml_option": ["doorsanity", "rooms_doorsanity"]}
 }

@@ -32,12 +32,24 @@
 	{"name": "Modifiers",    "count":1,"progression":true, "category": ["Mechanics"]},
 	{"name": "Pre-Run Shop", "count":1,"useful":true, "category": ["Mechanics"]},
 
-	{"name": "Killed",  "count":4, "trap":true, "category": ["Traps"]},
-	{"name": "Damaged", "count":4, "trap":true, "category": ["Traps"]},
-	{"name": "Frozen",  "count":3, "trap":true, "category": ["Traps"]},
+	{"name": "Damage Trap", "count":0, "trap":true, "category": ["Traps"]},
+	{"name": "Freeze Trap",  "count":0, "trap":true, "category": ["Traps"]},
+	{"name": "Butterfingers Trap",  "count":0, "trap":true, "category": ["Traps"]},
 
 	{"name": "Death Pack",				"count":10, "useful":true, "category": ["Filler Items", "HundredOfMany"]},
+	{"name": "Death Pack",				"count":10, "progression":true, "category": ["Filler Items", "HundredOfManyDL"]},
 	{"name": "Temporary Light-source",	"count":0, "filler":true, "category": ["Filler Items"]},
 	{"name": "Temporary Utility",		"count":0, "filler":true, "category": ["Filler Items"]},
-	{"name": "Pre-Run Shop Purchase",	"count":0, "filler":true, "category": ["Filler Items"]}
+	{"name": "Pre-Run Shop Purchase",	"count":0, "filler":true, "category": ["Filler Items"]},
+
+	{"name": "Holy Hand Grenade", "count":1, "progression":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Progressive Shield Potion", "count":2, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Candy", "count":1, "progression":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Progressive Bomb", "count":2, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Knockbomb", "count":1, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Hiding Box", "count":1, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Gold Blaster", "count":1, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Progressive Nanner", "count":2, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "Throwable Prop", "count":1, "useful":true, "category":["Items", "UnusedAchievements"]},
+	{"name": "A-90's Stop Sign", "count":1, "useful":true, "category":["Items", "UnusedAchievements"]}
 ]

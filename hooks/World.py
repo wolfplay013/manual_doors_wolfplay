@@ -1,6 +1,6 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
-from worlds.AutoWorld import World
-from BaseClasses import MultiWorld, CollectionState
+from worlds.AutoWorld import World # type: ignore
+from BaseClasses import MultiWorld, CollectionState # type: ignore
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -36,9 +36,15 @@ import logging
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
     valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Purchase"]
+    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap"]
+    total_unfilled_amount = len(multiworld.get_unfilled_locations(player=player))
+    trap_unfilled_amount = total_unfilled_amount * (multiworld.worlds[player].options.filler_traps / 100)
 
-    while len(multiworld.get_unfilled_locations(player=player)) != 0:
+    while len(multiworld.get_unfilled_locations(player=player)) != trap_unfilled_amount:
         return multiworld.random.choice(valid_filler)
+    
+    while len(multiworld.get_unfilled_locations(player=player)) != 0:
+        return multiworld.random.choice(valid_traps)
     else:
         return False
 
@@ -68,13 +74,12 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # Use this hook to remove items from the item pool
-    import random
 
     itemNamesToRemove = []
-    if is_option_enabled(multiworld, player, "floor_2") == False:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key"] # List of item names
     if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
         itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key"] # List of item names
+    elif is_option_enabled(multiworld, player, "floor_2") == False:
+        itemNamesToRemove = ["The Guiding Key", "The Guiding Key"] # List of item names
 
     # Add your code here to calculate which items to remove.
     #

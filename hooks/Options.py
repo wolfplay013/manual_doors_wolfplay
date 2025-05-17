@@ -136,9 +136,9 @@ class option_AllCrucifix(DefaultOnToggle):
     This setting can be disabled when you are in a Sync, due to it being just so time-wasting."""
     display_name = "All Entity Crucifix Achievements"
 
-class option_Floor2(DefaultOnToggle):
+class option_DisableFloor2(DefaultOnToggle):
     """Floor 2
-    
+
     Legacy option, allows you to disable Floor 2 achievements and items if set to false."""
     display_name = "Floor 2"
 
@@ -169,6 +169,12 @@ class option_DoorSanityRoomsType(Choice):
     option_no_checks = 2
     default = option_limited
 
+class option_AprilFools(Toggle):
+    """April Fools 2025, Adds unobtainable or scrapped achievements.
+
+    Legacy option, enables items and locations from the special v0.5.555555555555 april fools version."""
+    display_name = "April Fools"
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
 
@@ -186,13 +192,16 @@ def before_options_defined(options: dict) -> dict:
     options["void_related"] = option_VoidRelated
     options["sally_related"] = option_SallyRelated
     options["all_crucifix"] = option_AllCrucifix
-    options["floor_2"] = option_Floor2
+    options["floor_2"] = option_DisableFloor2
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
+    options["unused_achievements"] = option_AprilFools
 
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
 def after_options_defined(options: dict) -> dict:
+    options["filler_traps"].default = 15
+
     return options

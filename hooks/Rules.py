@@ -1,7 +1,7 @@
 from typing import Optional
-from worlds.AutoWorld import World
+from worlds.AutoWorld import World # type: ignore
 from ..Helpers import clamp, get_items_with_value
-from BaseClasses import MultiWorld, CollectionState
+from BaseClasses import MultiWorld, CollectionState # type: ignore
 
 import re
 

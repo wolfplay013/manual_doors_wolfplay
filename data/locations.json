@@ -82,5 +82,21 @@
 	{"name": "Rocky Road", 		 "region": "The Mines 0", 	"category": [ "Floors", "Floor2" ], "requires": "|Modifiers|"},
 	{"name": "A Hard Place", 	 "region": "The Mines 0", 	"category": [ "Floors", "Floor2", "AHardPlace" ], "requires": "|Modifiers|"},
 
+	{"name": "Rock Bottom (Before HOTEL+)", "region": "The Hotel 2", 		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "THE HUNT: First Edition", 	"region": "The Backdoor", 		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": ""},
+	{"name": "Survival The Jeff The Killer","region": "The Hotel 2", 		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers| AND |Holy Hand Grenade|"},
+	{"name": "Survive The Drakobloxxers",   "region": "The Hotel 2", 		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Thousand of Many",   			"region": "The Backdoor",		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Hardstuck",   				"region": "The Hotel 2",		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Sugar Rush",   				"region": "The Hotel 2",		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers| AND |Candy|"},
+	{"name": "Sugar Crash",   				"region": "The Hotel 2",		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers| AND |Candy|"},
+	{"name": "You're It",   				"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Tower Hero",   				"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "True Tower Hero",				"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Hotel Adventurer",   			"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "Void Buster",   				"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+	{"name": "QA Tester",   				"region": "The Lobby",			"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": ""},
+	{"name": "Book In, Book Out",   		"region": "The Hotel 2",		"category": ["Strange Achievements", "UnusedAchievements"], 	"requires": "|Modifiers|"},
+
 	{"name": "Beat the Backdoor", "region": "The Backdoor", "category": [], "requires": "", "victory":true}
 ]
