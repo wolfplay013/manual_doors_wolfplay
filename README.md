@@ -1,7 +1,7 @@
 ![The Archipelago Randomizer logo with Doors related images on every circle, next to the logo is the Doors logo and the word "Archipelago" in the Doors font. The "Archi" part in "Archipelago" is highlighted in a Cyan-Yellow-Red gradient.](https://file.garden/ZgF3xxdyQ318Tt1G/Archipelago/doorsarchipelago_text.svg)
 An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](https://www.roblox.com/games/6516141723/DOORS). This manual is intended to be played from a new account, however it is possible to play from an existing account.
 
-You may
+All game information can be found below.
 
 ## what is considered a location check in doors?
 Location checks are completed when you complete various achievements in Doors. You may see your achievements in the main lobby, or on the Roblox page of Doors. There is also an option for location checks per every unique door number opened.
@@ -32,9 +32,33 @@ The player can get temporary items which can help them out in the game, before t
 - **Pre-Run Shop Purchase** Allows you to buy an item from the Pre-Run Shop without needing the mechanic item.
 - **Death Pack** Gains you 10 deaths for the Hundred Of Many achievement, enabled with a specific setting regarding the achievement.
 
-The player can get items that hinder them in their journey.
+The player can get traps that hinder them in their journey.
 - **Damage Trap** The player must try to get damaged in any way, amount of damage doesn't matter.
 - **Freeze Trap** The player cannot move for the next 20 seconds.
 - **Butterfingers Trap** The player must throw all of their items away, they cannot pick them back up.
 
 ## what are the available options?
+
+You may disable achievements that could be concidered "Multiplayer", "Sync Unfriendly", "Tedious".
+
+These are the achievements under these categories: "Welcome Back", "Buddy System", "Betrayal", "Hundred Of Many", "Error", "Meet Jack", "Trial And Error", "Helping Hand", "A-1000", "Hotel Hell", and "A Hard Place".
+
+Additionally, a few achievements are bundled together, these are: "It Stares Back" & "Lost In The Dark", "Playtime" & "Playtime's Over", and All of the Crucifix Achievements.
+
+There are a few special settings that may alter the gameplay in a major way.
+- **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.
+- **Doorsanity** Sanity setting that adds a check for every door. Settings may remove checks to make it more fair (e.g. The Rooms having less checks, disabling A-1000)
+
+There are a few legacy settings that change the behavior of the manual to match a previous version.
+- **Floor 2** Once disabled, all Floor 2 items, achievements, and other things regarding it is disabled.
+- **April Fools 25** Enabled the 2025 April Fools achievements from Version 0.5.555555555555 that added Unobtainable and Scrapped achievements.
+
+There are some system settings that are supported by the manual.
+- **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to die in some way yourself. (e.g. leaving, dying to entities, etc)
+- **Filler Traps** Mixes in traps by the specified percentage, by default 15% of all filler will be replaced by traps.
+
+## misc information
+
+You may discuss the manual in the Archipelago Manual discord server, in the Doors thread. [Find the discord here](https://discord.gg/T5bcsVHByx), [Find the thread here](https://canary.discord.com/channels/1097532591650910289/1230046028799934464)
+
+"Doors Archipelago Logo", is adapted from the [Archipelago Logo](https://canary.discord.com/channels/731205301247803413/874776082946064394/1009265363600556094) (linked to the official discord) by Krista Corkos and Christopher Wilson, used under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/).
