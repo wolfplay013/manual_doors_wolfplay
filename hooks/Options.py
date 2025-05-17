@@ -164,10 +164,10 @@ class option_DoorSanityRoomsType(Choice):
     default = option_limited
 
 class option_AprilFools(Toggle):
-    """Legacy setting that adds the 2025 april fools update, Adds unobtainable or scrapped achievements.
+    """Strange Achievements
 
-    Legacy option, enables items and locations from the special v0.5.555555555555 april fools version."""
-    display_name = "April Fools 25"
+    Legacy setting that adds the 2025 april fools update, Adds unobtainable or scrapped achievements."""
+    display_name = "April Fools 2025"
 
 class option_DisableFloor2(DefaultOnToggle):
     """Floor 2
@@ -192,10 +192,10 @@ def before_options_defined(options: dict) -> dict:
     options["void_related"] = option_VoidRelated
     options["sally_related"] = option_SallyRelated
     options["all_crucifix"] = option_AllCrucifix
-    options["floor_2"] = option_DisableFloor2
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
+    options["floor_2"] = option_DisableFloor2
     options["unused_achievements"] = option_AprilFools
 
     return options
