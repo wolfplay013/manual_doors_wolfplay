@@ -59,7 +59,7 @@ class option_HundredOfMany(Choice):
     Encounter your hundredth death.
 
     This achievement should be disabled when you are playing in a sync, or when you have death link enabled, or when you just don't like tedious tasks.
-    If 'with_death_item' is enabled, you unlock an additional item that give you 10 deaths for this achievement. These are not balanced."""
+    If 'with_death_item' is chosen, you unlock an additional item that give you 10 deaths for this achievement. These are not balanced unless Death Link is enabled."""
     display_name = "Hundred Of Many"
     option_with_death_item = 0
     option_enabled = 1
@@ -136,12 +136,6 @@ class option_AllCrucifix(DefaultOnToggle):
     This setting can be disabled when you are in a Sync, due to it being just so time-wasting."""
     display_name = "All Entity Crucifix Achievements"
 
-class option_DisableFloor2(DefaultOnToggle):
-    """Floor 2
-
-    Legacy option, allows you to disable Floor 2 achievements and items if set to false."""
-    display_name = "Floor 2"
-
 class option_IndividualFloorKeys(Toggle):
     """Individual Floor Keys
     
@@ -170,10 +164,16 @@ class option_DoorSanityRoomsType(Choice):
     default = option_limited
 
 class option_AprilFools(Toggle):
-    """April Fools 2025, Adds unobtainable or scrapped achievements.
+    """Legacy setting that adds the 2025 april fools update, Adds unobtainable or scrapped achievements.
 
     Legacy option, enables items and locations from the special v0.5.555555555555 april fools version."""
-    display_name = "April Fools"
+    display_name = "April Fools 25"
+
+class option_DisableFloor2(DefaultOnToggle):
+    """Floor 2
+
+    Legacy option, allows you to disable Floor 2 achievements and items if set to false."""
+    display_name = "Floor 2"
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:

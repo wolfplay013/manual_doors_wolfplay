@@ -9,6 +9,7 @@
 	{"name": "One Of Many", 			"region": "The Hotel 0","category": [ "General" ], "requires": ""},
 	{"name": "Ten Of Many", 			"region": "The Hotel 0","category": [ "General" ], "requires": ""},
 	{"name": "Hundred Of Many", 		"region": "The Rooms", 	"category": [ "General", "HundredOfMany" ], "requires": "|Modifiers|"},
+	{"name": "Hundred Of Many", 		"region": "The Rooms", 	"category": [ "General", "HundredOfManyDL" ], "requires": "|Modifiers| AND |Death Pack:10|"},
 	{"name": "Interconnected", 			"region": "The Hotel 2","category": [ "General" ], "requires": "|The Rift|"},
 	{"name": "Lost In Translation", 	"region": "The Hotel 2","category": [ "General" ], "requires": "|The Rift| AND (|Progressive Candle:2| OR |Progressive Smoothie:2|)"},
 	{"name": "Herb Of Viridis", 		"region": "The Hotel 1","category": [ "General" ], "requires": "|Skeleton Key|"},

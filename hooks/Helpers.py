@@ -36,6 +36,21 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: Ma
 
     options = multiworld.worlds[player].options
 
+    if not options.hundred_of_many == "with_death_item":
+        if "HundredOfMany" or "HundredOfManyDL" in location["category"]:
+            return False
+        else:
+            if not options.death_link.value:
+                if "HundredOfManyDL" in location["category"]:
+                    return False
+                else:
+                    return None
+            else:
+                if "HundredOfMany" in location["category"]:
+                    return False
+                else:
+                    return None
+
     if not options.doorsanity:
         if "doorsanity" in location["category"]:
             return False
