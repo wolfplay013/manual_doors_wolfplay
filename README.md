@@ -48,7 +48,7 @@ There are a few special settings that may alter the gameplay in a major way.
 
 There are a few legacy settings that change the behavior of the manual to match a previous version.
 - **Floor 2** Once disabled, all Floor 2 items, achievements, and other things regarding it is disabled.
-- **April Fools 25** Enabled the 2025 April Fools achievements from Version 0.5.555555555555 that added Unobtainable and Scrapped achievements.
+- **April Fools 2025** Enabled the 2025 April Fools achievements from Version 0.5.555555555555 that added Unobtainable and Scrapped achievements.
 
 There are some system settings that are supported by the manual.
 - **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to die in some way yourself. (e.g. leaving, dying to entities, etc)
