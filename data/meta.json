@@ -1,24 +1,21 @@
 {
+    "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.meta.schema.json",
+    "_comment": [ "remove the _ before a non-comment/info propertie to enable it",
+    "For more info use json schemas to get a description and allowed value for every properties",
+    "https://github.com/ManualForArchipelago/Manual/blob/main/docs/resources/json-schemas-for-world-devs.md"],
     "docs": {
-        "apworld_description": [
-            "Doors Archipelago is a version of the Doors game on Roblox.",
-            "What is considered a location check in doors? - Location checks are completed when you complete various achievements in Doors. You may see your achievements in the main lobby, or on the Roblox page of Doors.",
-            "when the player receives an item, what happens? - When the player receives an item, they may get either a key that allows them to access an area, the ability to use an item (or multiple items), or a mechanic.",
-            "What is the victory condition? - Victory is achieved when the player escapes the backdoor (aka getting Other Way Around).",
-            "What are the available items? - The player can get keys for the main part of the game, or the side floors where the backdoor can be unlocked.",
-            "- The Guiding Key has 4 stages, which unlock Door 50, Door 100, Door 140, Door 195. The Curious Key has 2 stages, which unlocks the rooms and then the backdoor.",
-            "The player can get the ability to get items. Additionally a torn-up guide for any item that will give you the ability to use any one of these, but only once.",
-            "- There are important items, like the Lockpick, Candle, Crucifix, Skeleton Key & Glowstick. There are also non-important items, like the Flashlight, Lighter, Vitamins, Alarm Clock, Shears, Straplight, Bulklight, Laser Pointer, Battery Pack, Bandage Pack, Gummy Flashlight and all of the Starlight Liquids.",
-            "The player can unlock mechanics. There are currently only 3 locked mechanics.",
-            "- The Rift: Allows you to use both the rift and the golden rift. - Pre-Run Shop: Allows you to buy from the Pre-Run Shop. - Modifiers: Allows you to use modifiers (and enter lobbies with modifiers).",
-            "The player can get temporary items which can allow you to get an achievement prematurely.",
-            "- Temporary Light-source, Allows you to use any light-emitting item, excluding the Possesed Candle. Allows you to use any Utility item, excluding the Crucifix and every light-emitting item. On use you can use the item for the rest of the run.",
-            "What are the traps? - Slipped - Stand in place for 10 seconds, Attacked - Die as soon as possible without getting any achievements (excluding achievements achieved on death), Tripped - Force yourself to take damage.",
-            "The Archipelago thread can be found in https://discord.com/channels/1097532591650910289/1230046028799934464"
+        "_comment": [ "For more info on the possible documentation properties check schema and/or the github",
+            "https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class"
         ],
-        "_web": {
+        "apworld_description": [
+            "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.",
+            "This allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.",
+            "The key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,",
+            "the player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent."
+        ],
+        "web": {
             "_comment": "for more info check github https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class",
-            "theme": "dirt",
+            "theme": "grass",
             "bug_report_page": "https://discord.gg/T5bcsVHByx",
             "tutorials": [
                 {
@@ -27,7 +24,7 @@
                     "language": "English",
                     "file_name": "setup_en.md",
                     "link": "setup/en",
-                    "_authors": ["WolfPlay013"],
+                    "_authors": ["Fuzzy"],
                     "_comment": "if you don't include the authors it will use creator from game.json"
                 }
             ],

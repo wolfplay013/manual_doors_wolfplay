@@ -1,4 +1,5 @@
 {
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
 	"The Lobby": 	{"connects_to": ["The Hotel 0", "The Mines 0"], "requires": "", "starting": true},
 
 	"The Hotel 0": 	{"connects_to": ["The Hotel 1"], 				"requires": ""},
@@ -10,4 +11,4 @@
 
 	"The Rooms": 	{"connects_to": ["The Backdoor"], "requires": "|Skeleton Key| AND |Lockpick| AND (|The Curious Key:1| OR |The Hotel Key:1|)"},
 	"The Backdoor": {"connects_to": [], "requires": "|The Curious Key:2|"}
-}	
+}

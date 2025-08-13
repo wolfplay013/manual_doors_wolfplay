@@ -1,4 +1,5 @@
 {
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.categories.schema.json",
     "WelcomeBack":          {"hidden": true, "yaml_option": ["welcome_back"]},
     "BuddySystem":          {"hidden": true, "yaml_option": ["buddy_system"]},
     "Betrayal":             {"hidden": true, "yaml_option": ["betrayal"]}, 
@@ -26,4 +27,3 @@
     
     "misc_options": {"hidden":true, "yaml_option": ["doorsanity", "rooms_doorsanity"]}
 }
-
