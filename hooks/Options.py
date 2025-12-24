@@ -25,127 +25,144 @@ from typing import Type, Any
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
-class option_WelcomeBack(DefaultOnToggle):
-    """Welcome Back
-    Join another day.
 
-    This achievement should be disabled when you are playing in a sync."""
-    display_name = "Welcome Back"
+class achievement_Events(Toggle):
+    """Enables every non-secret event achievement. If the achievements listed below are no longer active, disable this option or update your manual if it's possible.
+    
+    Silent Night
+    Complete the Vision of Cringle's Workshop during the 2025 holidays."""
 
-class option_BuddySystem(DefaultOnToggle):
-    """Buddy System
-    Play a run with a friend.
-
-    This achievement should be disabled when you are not playing / don't want to play doors with someone."""
+class achievement_BuddySystem(DefaultOnToggle):
+    """Buddy System (Multiplayer Achievement)
+    Play a run with a friend."""
     display_name = "Buddy System"
 
-class option_Betrayal(DefaultOnToggle):
-    """Betrayal
-    Steal a hiding spot from someone right before they die.
+class achievement_BackFromTheDead(DefaultOnToggle):
+    """Back From The Dead (Paid Achievement)
+    Revive yourself."""
+    display_name = "Back From The Dead"
 
-    This achievement should be disabled when you are not playing / don't want to play doors with someone."""
+
+class achievement_WelcomeBack(DefaultOnToggle):
+    """Welcome Back (Secret Achievement)
+    Join another day."""
+    display_name = "Welcome Back"
+
+class achievement_Betrayal(DefaultOnToggle):
+    """Betrayal (Secret Achievement / Multiplayer Achievement)
+    Steal a hiding spot from someone right before they die."""
     display_name = "Betrayal"
 
-class option_HundredOfMany(Choice):
-    """Hundred Of Many
-    Encounter your hundredth death.
+class achievement_TenOfMany(DefaultOnToggle):
+    """Ten Of Many (Secret Achievement)
+    Encounter your tenth death."""
+    display_name = "Ten Of Many"
 
-    This achievement should be disabled when you are playing in a sync, or when you have death link enabled, or when you just don't like tedious tasks.
-    If 'with_death_item' is chosen, you unlock an additional item that give you 10 deaths for this achievement. These are balanced to require 9 Death Packs."""
+class achievement_HundredOfMany(Choice):
+    """Hundred Of Many (Secret Achievement)
+    Encounter your hundredth death.
+    If 'with_death_item' is chosen, an additional item will be added that gives you 10 deaths for this achievement."""
     display_name = "Hundred Of Many"
     option_with_death_item = 0
     option_enabled = 1
     option_disabled = 2
     default = option_with_death_item
 
-class option_ErrorAchievement(DefaultOnToggle):
-    """Error
-    Enounter the Glitch.
+class achievement_Doh(DefaultOnToggle):
+    """D'oh! (Secret Achievement)
+    Eat a Donut."""
+    display_name = "D'oh!"
 
-    This achievement should be disabled when you are not playing / don't want to play doors with someone."""
-    display_name = "Error"
+class achievement_FeedTheBirds(DefaultOnToggle):
+    """Feed the Birds (Secret Achievement)
+    Feed a Caw Bread!"""
+    display_name = "Feed The Birds"
 
-class option_MeetJack(DefaultOnToggle):
-    """Meet Jack
-    Enounter Jack.
+class achievement_YouFinallyTurnGreen(DefaultOnToggle):
+    """You Finally Turn Green (Secret Achievement)
+    Drink a Gween Soda and finally turn green."""
+    display_name = "You Finally Turn Green"
 
-    This achievement should be disabled when you are playing in a sync, or when you just don't want to grind for a 1 in 200 chance."""
-    display_name = "Meet Jack"
-
-class option_TrialAndError(DefaultOnToggle):
-    """Trial And Error
-    Encounter and survive an activated Glitch Fragment.
-
-    This achievement should be disabled when you are not playing / don't want to play doors with someone."""
-    display_name = "Trial And Error"
-
-class option_HelpingHand(DefaultOnToggle):
-    """Helping Hand
-    Knock Giggle off of another player's face.
-
-    This achievement should be disabled when you are not playing / don't want to play doors with someone."""
+class achievement_HelpingHand(DefaultOnToggle):
+    """Helping Hand (Multiplayer Achievement)
+    Knock Giggle off of another player's face."""
     display_name = "Helping Hand"
 
-class option_A1000(DefaultOnToggle):
-    """A-1000
-    Reach the end of The Rooms.
+class achievement_ItStaresBack(DefaultOnToggle):
+    """It Stares Back (Secret Achievement / Multiplayer Achievement)
+    Encounter the Void."""
+    display_name = "It Stares Back"
 
-    This achievement may take hours to complete, and should be disabled when you are playing in a sync, or when you don't want to spend a lot of time on a single check."""
-    display_name = "A-1000"
+class achievement_MeetTimothy(DefaultOnToggle):
+    """Meet Timothy (Secret Achievement)
+    Encounter Timothy while looting."""
 
-class option_HotelHell(DefaultOnToggle):
-    """Hotel Hell
-    Escape The Hotel with at least a 150% bonus using Modifiers.
+class achievement_Error(DefaultOnToggle):
+    """Error (Secret Achievement / Multiplayer Achievement / Rare Achievement)
+    Enounter the Glitch."""
+    display_name = "Error"
 
-    This achievement can be quite difficult, reccomended to disable this if you have never done Hotel Hell."""
+class achievement_MeetJack(DefaultOnToggle):
+    """Meet Jack (Secret Achievement / Rare Achievement)
+    Enounter Jack."""
+    display_name = "Meet Jack"
+
+class achievement_TrialAndError(DefaultOnToggle):
+    """Trial And Error (Secret Achievement / Multiplayer Achievement / Rare Achievement)
+    Encounter and survive an activated Glitch Fragment."""
+    display_name = "Trial And Error"
+
+class achievement_SecretCrucifix(DefaultOnToggle):
+    """Every secret Crucifix achievement. (Secret Achievement)
+    Use a crucifix against every entity except for Rush, Ambush, Figure, & Seek."""
+    display_name = "All Entity Crucifix Achievements"
+
+class achievement_HotelHell(DefaultOnToggle):
+    """Hotel Hell (Difficult Achievement)
+    Escape The Hotel with at least a 150% bonus using Modifiers."""
     display_name = "Hotel Hell"
 
-class option_AHardPlace(DefaultOnToggle):
-    """A Hard Place
-    Escape The Mines with at least a 150% bonus using Modifiers.
-
-    This achievement can be quite difficult, reccomended to disable this if you have never done A Hard Place."""
+class achievement_AHardPlace(DefaultOnToggle):
+    """A Hard Place (Difficult Achievement)
+    Escape The Mines with at least a 150% bonus using Modifiers."""
     display_name = "A Hard Place"
 
-class option_VoidRelated(DefaultOnToggle):
-    """It Stares Back & Lost In The Dark
-    
-    These achievements are grouped together due to being very similar. Lost In The Dark can be disabled through the Crucifix achievement setting.
-    Technically possible alone, however this achievement should be disabled when you are not playing / don't want to play doors with someone."""
-    display_name = "Void Related Achievements"
+class achievement_A1000(DefaultOnToggle):
+    """A-1000 (Secret Achievement / Long Achievement)
+    Reach the end of The Rooms."""
+    display_name = "A-1000"
 
-class option_SallyRelated(DefaultOnToggle):
-    """Playtime & Playtime's Over
-    
-    These achievements are grouped together due to being very similar. Playtime's Over can be disabled through the Crucifix achievement setting.
-    Very RNG-heavy achievements."""
-    display_name = "Sally Related Achievements"
+class achievement_BattleMode(DefaultOnToggle):
+    """Battle Mode
+    Enables all Battle Mode-exclusive items and achievements."""
+    display_name = "Battle Mode"
 
-class option_AllCrucifix(DefaultOnToggle):
-    """Every entity achievement related to the Crucifix.
+class achievement_BattleModeSecret(DefaultOnToggle):
+    """Secret Battle Mode Achievements (Secret Achievement)
+    Enables all secret Battle Mode achievements, disabling this will also remove hard achievements."""
+    display_name = "Battle Mode"
 
-    Enables all 23 crucifix achievements that are related to an entity. This setting does not disable Evil Be Gone.
-    This setting can be disabled when you are in a Sync, due to it being just so time-wasting."""
-    display_name = "All Entity Crucifix Achievements"
+class achievement_BattleModeCool(DefaultOnToggle):
+    """Hard Battle Mode Achievements (Secret Achievement / Hard Achievement)
+    Enables only the hard Battle Mode achievements."""
+    display_name = "Battle Mode"
 
 class option_IndividualFloorKeys(Toggle):
     """Individual Floor Keys
-    
-    Legacy option, changes the progression of the game in a way where you can access The Mines before The Hotel.
+    Experimental option, changes the progression of the game in a way where you can access The Mines before The Hotel.
     Every floor exceept for subfloors get 3 keys, with the exception of The Hotel which skips the first key.
     Key #1 unlocks the floor itself, Key #2 unlocks the midway point, Key #3 unlocks the last door."""
     display_name = "Individual Floor Keys"
 
 class option_Doorsanity(Toggle):
     """Doorsanity
-    
     Gives a check for every door that you open up.
     Includes 450 checks by default, however this can be modified to be lower or higher through settings.
     Disabling Floor 2 will disable all 100 checks for that floor."""
     display_name = "Doorsanity"
 
 class option_DoorSanityRoomsType(Choice):
-    """The Rooms can be customisable to be less severe. Disabling the A-1000 achievement can also make this shorter.
+    """The Rooms can be customised to be less severe. Disabling the A-1000 achievement can also make this shorter.
         all_checks: Adds all checks possible, 1 check per 1 door. Stops at 200 checks if the A-1000 achievement is disabled.
         limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors. Stops at 40 checks if the A-1000 achievement is disabled.
         no_check: Disables all checks in The Rooms subfloor."""
@@ -155,18 +172,6 @@ class option_DoorSanityRoomsType(Choice):
     option_no_checks = 2
     default = option_limited
 
-class option_AprilFools(Toggle):
-    """Strange Achievements
-
-    Legacy setting that adds the 2025 april fools update, Adds unobtainable or scrapped achievements."""
-    display_name = "April Fools 2025"
-
-class option_DisableFloor2(DefaultOnToggle):
-    """Floor 2
-
-    Legacy option, allows you to disable Floor 2 achievements and items if set to false."""
-    display_name = "Floor 2"
-
 class FillerTrapPercent(Range):
     """How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps."""
     range_start = 0
@@ -175,26 +180,34 @@ class FillerTrapPercent(Range):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
-    options["welcome_back"] = option_WelcomeBack
-    options["buddy_system"] = option_BuddySystem
-    options["betrayal"] = option_Betrayal
-    options["hundred_of_many"] = option_HundredOfMany
-    options["error"] = option_ErrorAchievement
-    options["meet_jack"] = option_MeetJack
-    options["trial_and_error"] = option_TrialAndError
-    options["helping_hand"] = option_HelpingHand
-    options["a_1000"] = option_A1000
-    options["hotel_hell"] = option_HotelHell
-    options["a_hard_place"] = option_AHardPlace
-    options["void_related"] = option_VoidRelated
-    options["sally_related"] = option_SallyRelated
-    options["all_crucifix"] = option_AllCrucifix
+    options["buddy_system"] = achievement_BuddySystem
+    options["back_from_the_dead"] = achievement_BackFromTheDead
+    options["welcome_back"] = achievement_WelcomeBack
+    options["betrayal"] = achievement_Betrayal
+    options["ten_of_many"] = achievement_TenOfMany
+    options["hundred_of_many"] = achievement_HundredOfMany
+    options["doh"] = achievement_Doh
+    options["feed_the_birds"] = achievement_FeedTheBirds
+    options["you_finally_turn_green"] = achievement_YouFinallyTurnGreen
+    options["helping_hand"] = achievement_HelpingHand
+    options["it_stares_back"] = achievement_ItStaresBack
+    options["meet_timothy"] = achievement_MeetTimothy
+    options["error"] = achievement_Error
+    options["meet_jack"] = achievement_MeetJack
+    options["trial_and_error"] = achievement_TrialAndError
+    options["a_1000"] = achievement_A1000
+    options["hotel_hell"] = achievement_HotelHell
+    options["a_hard_place"] = achievement_AHardPlace
+    options["battle_mode"] = achievement_BattleMode
+    options["battle_mode_secrets"] = achievement_BattleModeSecret
+    options["battle_mode_hard_secrets"] = achievement_BattleModeCool
+
+    options["all_crucifix"] = achievement_SecretCrucifix
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
-    options["floor_2"] = option_DisableFloor2
-    options["unused_achievements"] = option_AprilFools
     options["filler_traps"] = FillerTrapPercent
+    options["event_achievements"] = achievement_Events
 
     return options
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

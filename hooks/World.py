@@ -36,11 +36,11 @@ import logging
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
     valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Purchase"]
-    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap"]
+    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap"]
     total_unfilled_amount = len(multiworld.get_unfilled_locations(player=player))
     trap_unfilled_amount = total_unfilled_amount * (multiworld.worlds[player].options.filler_traps / 100)
 
-    while len(multiworld.get_unfilled_locations(player=player)) != trap_unfilled_amount:
+    while len(multiworld.get_unfilled_locations(player=player)) <= trap_unfilled_amount:
         return multiworld.random.choice(valid_filler)
     
     while len(multiworld.get_unfilled_locations(player=player)) != 0:
@@ -85,9 +85,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
     if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key"] # List of item names
-    elif is_option_enabled(multiworld, player, "floor_2") == False:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key"] # List of item names
+        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
 
     # Add your code here to calculate which items to remove.
     #
