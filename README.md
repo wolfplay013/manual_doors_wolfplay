@@ -15,7 +15,7 @@ The player can get keys which unlock certain milestones in the main floors, or c
 - **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms subfloor, the second stage unlocks The Backdoor subfloor.
 
 The player can also get items that unlock items, every item in doors is a single item in the multiworld, however there are a few exceptions to this.
-- **Progressive Candle**, **Progressive Smoothie**, **Progressive Jars** are items, where the normal variant is the first stage of the item, and the rifted variant is the second stage of the item. Both are concidered progressive due to the achievement requiring you to turn the item into the rifted variant.
+- **Progressive Candle**, **Progressive Smoothie**, & **Progressive Jars** are items, where the normal variant is the first stage of the item, and the rifted variant is the second stage of the item. Both are concidered progressive due to the achievement requiring you to turn the item into the rifted variant.
 - **Starlight Liquids** is an item that unlocks 3 items. The item unlocks the **Vial of Starlight**, **Bottle of Starlight** & **Barrel of Starlight**.
 
 The player can also unlock specific mechanics. There are currently only 3 mechanics that are items in the multiworld.
@@ -37,7 +37,7 @@ The player can get traps that hinder them in their journey.
 
 ## what are the available options?
 
-You may disable all achievement classified as Secret, as well as a few achievements that can be disabled due to requiring multiple players, or being too hard.
+You may disable all Secret achievements, as well as a couple of achievements that aren't secret but deserve to have the ability to be removed.
 
 There are a few special settings that may alter the gameplay in a major way.
 - **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.

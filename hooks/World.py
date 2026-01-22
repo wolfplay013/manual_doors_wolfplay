@@ -40,7 +40,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
     total_unfilled_amount = len(multiworld.get_unfilled_locations(player=player))
     trap_unfilled_amount = total_unfilled_amount * (multiworld.worlds[player].options.filler_traps / 100)
 
-    while len(multiworld.get_unfilled_locations(player=player)) <= trap_unfilled_amount:
+    while len(multiworld.get_unfilled_locations(player=player)) != trap_unfilled_amount:
         return multiworld.random.choice(valid_filler)
     
     while len(multiworld.get_unfilled_locations(player=player)) != 0:
