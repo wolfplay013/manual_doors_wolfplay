@@ -1,8 +1,6 @@
 {
 	"$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
     "data": [
-        {"name": "Silent Night",            "region": "The Lobby",   "category": [ "Events" ], "requires": "|Modifiers|"},
-
         {"name": "Welcome", 				"region": "The Lobby", 	"category": [ "General" ], "requires": ""},
         {"name": "Group Member", 			"region": "The Lobby", 	"category": [ "General" ], "requires": ""},
         {"name": "Buddy System", 			"region": "The Hotel 0","category": [ "General", "multiplayer_BuddySystem" ], "requires": ""},
@@ -28,6 +26,12 @@
         {"name": "D'oh!", 			        "region": "The Hotel 1","category": [ "General", "secret_Doh" ], "requires": ""},
         {"name": "Feed The Birds", 	        "region": "The Outdoors","category":[ "General", "secret_FeedTheBirds" ], "requires": "(|The Mines Key:3| OR |The Guiding Key:4|) AND |The Rift| AND |Bread|"},
         {"name": "You Finally Turn Green", 	"region": "The Mines 0","category": [ "General", "secret_YouFinallyTurnGreen" ], "requires": "|Gween Soda|"},
+
+        {"name": "MACHINE LEARNING",        "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "THREADS SYNCHRONIZED",    "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "LOW LATENCY",             "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "CLEAN RUN",               "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "UPTIME",                  "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
 
         {"name": "Out Of My Way", 				"region": "The Hotel 0", "category": [ "Entities" ], "requires": ""},
         {"name": "You Can Run", 				"region": "The Hotel 0", "category": [ "Entities" ], "requires": ""},

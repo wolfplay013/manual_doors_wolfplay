@@ -140,12 +140,17 @@ class achievement_BattleMode(DefaultOnToggle):
 class achievement_BattleModeSecret(DefaultOnToggle):
     """Secret Battle Mode Achievements (Secret Achievement)
     Enables all secret Battle Mode achievements, disabling this will also remove hard achievements."""
-    display_name = "Battle Mode"
+    display_name = "Battle Mode Secret Achievements"
 
 class achievement_BattleModeCool(DefaultOnToggle):
     """Hard Battle Mode Achievements (Secret Achievement / Hard Achievement)
-    Enables only the hard Battle Mode achievements."""
-    display_name = "Battle Mode"
+    Enables only the hard Battle Mode achievements. (Winner Winner, In Plain Sight 2, High Roller, Battler)"""
+    display_name = "Battle Mode Hard Achievements"
+
+class achievement_DailyRuns(DefaultOnToggle):
+    """Daily Runs
+    Enables all Daily Runs achievements."""
+    display_name = "Daily Runs"
 
 class option_IndividualFloorKeys(Toggle):
     """Individual Floor Keys
@@ -201,13 +206,14 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["battle_mode"] = achievement_BattleMode
     options["battle_mode_secrets"] = achievement_BattleModeSecret
     options["battle_mode_hard_secrets"] = achievement_BattleModeCool
+    options["daily_runs"] = achievement_DailyRuns
 
     options["all_crucifix"] = achievement_SecretCrucifix
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
     options["filler_traps"] = FillerTrapPercent
-    options["event_achievements"] = achievement_Events
+    # options["event_achievements"] = achievement_Events
 
     return options
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

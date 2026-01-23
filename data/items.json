@@ -54,6 +54,7 @@
         {"name": "Modifiers",    "count":1,"progression":true, "category": ["Mechanics"]},
         {"name": "Pre-Run Shop", "count":1,"useful":true,      "category": ["Mechanics"]},
         {"name": "Battle Mode",  "count":1,"progression":true, "category": ["Mechanics", "disable_BattleMode"]},
+        {"name": "Visions",      "count":1,"progression":true, "category": ["Mechanics"]},
 
         {"name": "Damage Trap", "count":0, "trap":true, "category": ["Traps"]},
         {"name": "Freeze Trap",  "count":0, "trap":true, "category": ["Traps"]},

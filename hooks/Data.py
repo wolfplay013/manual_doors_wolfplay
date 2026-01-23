@@ -76,6 +76,14 @@ def after_load_location_file(location_table: list) -> list:
             'category': ["Doorsanity (Backdoor)", "doorsanity"]
         })
         temporary_count = temporary_count + 1 
+    temporary_count = 2220
+    while temporary_count != 0:
+        door_sanity.append({
+            'name': f'{format(250+temporary_count, ",d")}m - The Outdoors',
+            'region': 'The Outdoors',
+            'category': ["Doorsanity (Outdoors)", "doorsanity"]
+        })
+        temporary_count = temporary_count - 60
 
     location_table.extend(door_sanity)
     

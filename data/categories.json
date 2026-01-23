@@ -27,6 +27,7 @@
     "disable_BattleMode":          {"hidden": true, "yaml_option": ["battle_mode"]},
     "secret_BattleMode":           {"hidden": true, "yaml_option": ["battle_mode_secrets"]},
     "secret_CoolBattleMode":       {"hidden": true, "yaml_option": ["battle_mode_hard_secrets"]},
+    "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
 
     "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
     "FloorKeys":            {"hidden": true, "yaml_option": ["individual_floor_keys"]},
