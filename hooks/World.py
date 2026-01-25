@@ -36,7 +36,7 @@ import logging
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
     valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Purchase"]
-    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap"]
+    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap", "Modifier Trap"]
     total_unfilled_amount = len(multiworld.get_unfilled_locations(player=player))
     trap_unfilled_amount = total_unfilled_amount * (multiworld.worlds[player].options.filler_traps / 100)
 
