@@ -28,10 +28,10 @@
         {"name": "You Finally Turn Green", 	"region": "The Mines 0","category": [ "General", "secret_YouFinallyTurnGreen" ], "requires": "|Gween Soda|"},
 
         {"name": "MACHINE LEARNING",        "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
-        {"name": "THREADS SYNCHRONIZED",    "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "PARALLEL PROCESSING",    "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns", "disable_ParallelProcessing"], "requires": "|Visions|"},
         {"name": "LOW LATENCY",             "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
-        {"name": "CLEAN RUN",               "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
-        {"name": "UPTIME",                  "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns"], "requires": "|Visions|"},
+        {"name": "CLEAN RUN",               "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns", "disable_CleanRun"], "requires": "|Visions|"},
+        {"name": "UPTIME",                  "region": "The Lobby",  "category": [ "Visions", "disable_DailyRuns", "disable_Uptime"], "requires": "|Visions|"},
 
         {"name": "Out Of My Way", 				"region": "The Hotel 0", "category": [ "Entities" ], "requires": ""},
         {"name": "You Can Run", 				"region": "The Hotel 0", "category": [ "Entities" ], "requires": ""},
