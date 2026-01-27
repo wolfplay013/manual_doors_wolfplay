@@ -152,6 +152,21 @@ class achievement_DailyRuns(DefaultOnToggle):
     Enables all Daily Runs achievements."""
     display_name = "Daily Runs"
 
+class achievement_ParallelProcessing(DefaultOnToggle):
+    """PARALLEL PROCESSING (Multiplayer Achievement)
+    Win any Daily Run with other players. Retries count."""
+    display_name = "PARALLEL PROCESSING"
+
+class achievement_CleanRun(DefaultOnToggle):
+    """CLEAN RUN (Async Achievement)
+    Win any Daily Run on your first attempt."""
+    display_name = "CLEAN RUN"
+
+class achievement_Uptime(DefaultOnToggle):
+    """UPTIME (Async Achievement)
+    Keep up a Daily Streak for 7 days."""
+    display_name = "UPTIME"
+
 class option_IndividualFloorKeys(Toggle):
     """Individual Floor Keys
     Experimental option, changes the progression of the game in a way where you can access The Mines before The Hotel.
@@ -206,6 +221,9 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["battle_mode"] = achievement_BattleMode
     options["battle_mode_secrets"] = achievement_BattleModeSecret
     options["battle_mode_hard_secrets"] = achievement_BattleModeCool
+    options["parallel_processing"] = achievement_ParallelProcessing
+    options["clean_run"] = achievement_CleanRun
+    options["uptime"] = achievement_Uptime
     options["daily_runs"] = achievement_DailyRuns
 
     options["all_crucifix"] = achievement_SecretCrucifix

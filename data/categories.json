@@ -27,6 +27,10 @@
     "disable_BattleMode":          {"hidden": true, "yaml_option": ["battle_mode"]},
     "secret_BattleMode":           {"hidden": true, "yaml_option": ["battle_mode_secrets"]},
     "secret_CoolBattleMode":       {"hidden": true, "yaml_option": ["battle_mode_hard_secrets"]},
+
+    "disable_ParallelProcessing":  {"hidden": true, "yaml_option": ["parallel_processing"]},
+    "disable_CleanRun":            {"hidden": true, "yaml_option": ["clean_run"]},
+    "disable_Uptime":              {"hidden": true, "yaml_option": ["uptime"]},
     "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
 
     "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
