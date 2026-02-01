@@ -18,7 +18,7 @@
         {"name": "Progressive Jar",		"count":2, "progression":true, "category": ["Items"]},
         {"name": "Donut",		        "count":1, "progression":true, "category": ["Items", "BattleItems"]},
         {"name": "Flashlight",			"count":1, "useful":true, "category": ["Items"]},
-        {"name": "Lighter", 			"count":1, "useful":true, "category": ["Items", "BattleItems"]},
+        {"name": "Lighter", 			"count":1, "progression":true, "category": ["Items", "BattleItems"]},
         {"name": "Vitamins", 			"count":1, "useful":true, "category": ["Items", "BattleItems"]},
         {"name": "Alarm Clock", 		"count":1, "useful":true, "category": ["Items"]},
 
