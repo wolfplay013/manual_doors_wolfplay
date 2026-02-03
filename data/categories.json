@@ -38,6 +38,7 @@
     "doorsanity":           {"hidden": true},
     "notsimple_doorsanity": {"hidden": true},
     "veryhigh_doorsanity":  {"hidden": true},
+    "HundredOfMany":        {"hidden": true},
     "Events":               {"yaml_option": ["event_achievements"]},
     
     "misc_options": {"hidden":true, "yaml_option": ["doorsanity", "rooms_doorsanity"]}
