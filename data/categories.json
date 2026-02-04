@@ -4,6 +4,7 @@
     "BattleItems": {"hidden": true},
 
     "multiplayer_BuddySystem":     {"hidden": true, "yaml_option": ["buddy_system"]},
+    "disable_GroupMember":         {"hidden": true, "yaml_option": ["group_member"]},
     "disable_BackFromTheDead":     {"hidden": true, "yaml_option": ["back_from_the_dead"]},
     "secret_WelcomeBack":          {"hidden": true, "yaml_option": ["welcome_back"]},
     "secret_Betrayal":             {"hidden": true, "yaml_option": ["betrayal"]},

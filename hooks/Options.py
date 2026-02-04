@@ -26,16 +26,18 @@ from typing import Type, Any
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
-class achievement_Events(Toggle):
-    """Enables every non-secret event achievement. If the achievements listed below are no longer active, disable this option or update your manual if it's possible.
-    
-    Silent Night
-    Complete the Vision of Cringle's Workshop during the 2025 holidays."""
+# class achievement_Events(Toggle):
+#     """Enables every non-secret event achievement. If the achievements listed below are no longer active, disable this option or update your manual if it's possible."""
 
 class achievement_BuddySystem(DefaultOnToggle):
     """Buddy System (Multiplayer Achievement)
     Play a run with a friend."""
     display_name = "Buddy System"
+
+class achievement_GroupMember(DefaultOnToggle):
+    """Group Member
+    Join the LSPLASH group (and get a free revive)!"""
+    display_name = "Group Member"
 
 class achievement_BackFromTheDead(DefaultOnToggle):
     """Back From The Dead (Paid Achievement)
@@ -201,6 +203,7 @@ class FillerTrapPercent(Range):
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["buddy_system"] = achievement_BuddySystem
+    options["group_member"] = achievement_GroupMember
     options["back_from_the_dead"] = achievement_BackFromTheDead
     options["welcome_back"] = achievement_WelcomeBack
     options["betrayal"] = achievement_Betrayal
