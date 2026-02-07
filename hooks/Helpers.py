@@ -36,10 +36,10 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "M
             return None
 
     if "Doorsanity (Mines)" in location["category"]:
-        if not options.floor_2:
-            return False
-        else:
-            return True
+        # if not options.floor_2:
+        #    return False
+        # else:
+        return True
 
     if "Doorsanity (Rooms)" in location["category"]:
         if not options.a_1000 and "veryhigh_doorsanity" in location["category"]:
