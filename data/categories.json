@@ -1,5 +1,5 @@
 {
-    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.categories.schema.json",
+    "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.categories.schema.json",
     
     "BattleItems": {"hidden": true},
 
@@ -25,7 +25,6 @@
     "disable_HotelHell":            {"hidden": true, "yaml_option": ["hotel_hell"]},
     "disable_AHardPlace":           {"hidden": true, "yaml_option": ["a_hard_place"]},
 
-    "disable_BattleMode":          {"hidden": true, "yaml_option": ["battle_mode"]},
     "secret_BattleMode":           {"hidden": true, "yaml_option": ["battle_mode_secrets"]},
     "secret_CoolBattleMode":       {"hidden": true, "yaml_option": ["battle_mode_hard_secrets"]},
 
@@ -33,6 +32,7 @@
     "disable_CleanRun":            {"hidden": true, "yaml_option": ["clean_run"]},
     "disable_Uptime":              {"hidden": true, "yaml_option": ["uptime"]},
     "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
+    "disable_ChaosMode":           {"hidden": true, "yaml_option": ["chaos_mode"]},
 
     "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
     "FloorKeys":            {"hidden": true, "yaml_option": ["individual_floor_keys"]},

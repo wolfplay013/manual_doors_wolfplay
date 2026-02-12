@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.game.schema.json",
   "game": "Doors",
   "creator": "WolfPlay",
   "filler_item_name": "Broken Key",

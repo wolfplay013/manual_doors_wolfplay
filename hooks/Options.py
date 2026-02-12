@@ -134,14 +134,9 @@ class achievement_A1000(DefaultOnToggle):
     Reach the end of The Rooms."""
     display_name = "A-1000"
 
-class achievement_BattleMode(DefaultOnToggle):
-    """Battle Mode
-    Enables all Battle Mode-exclusive items and achievements."""
-    display_name = "Battle Mode"
-
 class achievement_BattleModeSecret(DefaultOnToggle):
     """Secret Battle Mode Achievements (Secret Achievement)
-    Enables all secret Battle Mode achievements, disabling this will also remove hard achievements."""
+    Enables all Battle Mode-exclusive items and achievements, excluding Hard Achievements."""
     display_name = "Battle Mode Secret Achievements"
 
 class achievement_BattleModeCool(DefaultOnToggle):
@@ -167,6 +162,11 @@ class achievement_CleanRun(DefaultOnToggle):
 class achievement_Uptime(DefaultOnToggle):
     """UPTIME (Async Achievement)
     Keep up a Daily Streak for 7 days."""
+    display_name = "UPTIME"
+
+class achievement_ChaosMode(DefaultOnToggle):
+    """Everything Everywhere All At Once (Secret Achievement / Hard Achievement)
+    Successfully escape The Hotel in the CHAOS Vision. If using livestream integration, requires at least 5 viewers."""
     display_name = "UPTIME"
 
 class option_IndividualFloorKeys(Toggle):
@@ -221,13 +221,13 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["a_1000"] = achievement_A1000
     options["hotel_hell"] = achievement_HotelHell
     options["a_hard_place"] = achievement_AHardPlace
-    options["battle_mode"] = achievement_BattleMode
     options["battle_mode_secrets"] = achievement_BattleModeSecret
     options["battle_mode_hard_secrets"] = achievement_BattleModeCool
     options["parallel_processing"] = achievement_ParallelProcessing
     options["clean_run"] = achievement_CleanRun
     options["uptime"] = achievement_Uptime
     options["daily_runs"] = achievement_DailyRuns
+    options["chaos_mode"] = achievement_ChaosMode
 
     options["all_crucifix"] = achievement_SecretCrucifix
     options["individual_floor_keys"] = option_IndividualFloorKeys
