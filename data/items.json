@@ -53,7 +53,6 @@
         {"name": "The Rift", 	 "count":1,"progression":true, "category": ["Mechanics"]},
         {"name": "Modifiers",    "count":1,"progression":true, "category": ["Mechanics"]},
         {"name": "Pre-Run Shop", "count":1,"useful":true,      "category": ["Mechanics"]},
-        {"name": "Battle Mode",  "count":1,"progression":true, "category": ["Mechanics", "disable_BattleMode"]},
         {"name": "Visions",      "count":1,"progression":true, "category": ["Mechanics"]},
 
         {"name": "Damage Trap", "count":0, "trap":true, "category": ["Traps"], "_comment": "Check hook_get_filler_item_name in World.py for trap generation"},
