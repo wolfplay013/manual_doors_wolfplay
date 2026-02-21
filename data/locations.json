@@ -100,16 +100,16 @@
         {"name": "A Hard Place", 	 "region": "The Mines 2", 	"category": [ "Challenges", "disable_AHardPlace" ], "requires": "|Modifiers|"},
         {"name": "A-1000", 			 "region": "The Rooms", 	"category": [ "Challenges", "secret_A1000" ], "requires": "|The Curious Key:2| OR |The Backdoor Key|"},
 
-        {"name": "Winner",           "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8|"},
-        {"name": "Winner Winner",    "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:12|"},
-        {"name": "In Plain Sight 2", "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:12|"},
-        {"name": "Pointers",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8|"},
-        {"name": "High Roller",      "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:12|"},
-        {"name": "A Triple",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8| AND |Gold Blaster|"},
-        {"name": "Finders Keepers",  "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8|"},
-        {"name": "The One Who Dealt It","region": "The Lobby",  "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8| AND |Lighter|"},
-        {"name": "Ring Out",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:8| AND |Boxing Gloves|"},
-        {"name": "Battler",          "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode","secret_CoolBattleMode" ], "requires": "|Battle Mode| AND |@BattleItems:12|"},
+        {"name": "Winner",           "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8|"},
+        {"name": "Winner Winner",    "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},
+        {"name": "In Plain Sight 2", "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},
+        {"name": "Pointers",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8|"},
+        {"name": "High Roller",      "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},
+        {"name": "A Triple",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8| AND |Gold Blaster|"},
+        {"name": "Finders Keepers",  "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8|"},
+        {"name": "The One Who Dealt It","region": "The Lobby",  "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8| AND |Lighter|"},
+        {"name": "Ring Out",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8| AND |Boxing Gloves|"},
+        {"name": "Battler",          "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode","secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},
 
         {"name": "Beat the Backdoor", "region": "The Backdoor", "category": ["Goal"], "requires": "", "victory":true}
     ]
