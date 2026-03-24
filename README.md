@@ -11,8 +11,15 @@ When the player receives an item, they may get either a key that allows them to 
 Victory is achieved when the player escapes The Backdoor.
 ## what are the available items?
 The player can get keys which unlock certain milestones in the main floors, or certain subfloors.
-- **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game. If the "Individual Floor Keys" setting is enabled, the following items are used instead.
-- **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms subfloor, the second stage unlocks The Backdoor subfloor.
+- **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game.
+- **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms & The Outdoors subfloors, the second stage unlocks The Backdoor subfloor.
+
+If the "Individual Floor Keys" setting is enabled, the following items are used instead.
+- **The Hotel Key** There are 2 stages of this item. First stage unlocks Door 50, second stage unlocks Door 100.
+- **The Mines Key** There are 3 stages of this item. First stage unlocks the floor, second stage unlocks Door 142, third stage unlocks Door 200.
+- **The Rooms Key** Unlocks The Rooms subfloor.
+- **The Outdoors Key** Unlocks The Outdoors subfloor.
+- **The Backdoor Key** Unlocks The Backdoor subfloor. Note that this still requires you to visit any subfloor!
 
 The player can also get items that unlock items, every item in doors is a single item in the multiworld, however there are a few exceptions to this.
 - **Progressive Candle**, **Progressive Smoothie**, & **Progressive Jars** are items, where the normal variant is the first stage of the item, and the rifted variant is the second stage of the item. Both are concidered progressive due to the achievement requiring you to turn the item into the rifted variant.
@@ -22,7 +29,8 @@ The player can also unlock specific mechanics. There are currently only 3 mechan
 - **The Rift** Unlocks the ability to put items in The Rift & The Golden Rift.
 - **Modifiers** Unlocks the ability to use Modifiers in runs.
 - **Pre-Run Shop** Unlocks the ability to buy items from the Pre-Run Shop. This also requires the item to be unlocked.
-- **Battle Mode** Unlocks the Battle Mode gamemode.
+- **Visions** Unlocks the ability to have visions. 
+- **Subfloor Skips** Unlocks the ability to skip to subfloors using stardust. Note that this still requires the keys for the subfloor!
 
 The player can get temporary items which can help them out in the game, before they have an item or a mechanic unlocked.
 - **Temporary Light-source** Gives you the ability to use a light-source only once. Only applies for a single item, doesn't allow you to rift it.

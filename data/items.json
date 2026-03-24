@@ -50,10 +50,11 @@
         {"name": "A90's Stop Sign", "count":1, "progression":true, "category":["Items", "BattleItems", "disable_BattleMode"]},
         {"name": "Boxing Gloves", "count":1, "progression":true, "category":["Items", "BattleItems", "disable_BattleMode"]},
 
-        {"name": "The Rift", 	 "count":1,"progression":true, "category": ["Mechanics"]},
-        {"name": "Modifiers",    "count":1,"progression":true, "category": ["Mechanics"]},
-        {"name": "Pre-Run Shop", "count":1,"useful":true,      "category": ["Mechanics"]},
-        {"name": "Visions",      "count":1,"progression":true, "category": ["Mechanics"]},
+        {"name": "The Rift", 	  "count":1,"progression":true, "category": ["Mechanics"]},
+        {"name": "Modifiers",     "count":1,"progression":true, "category": ["Mechanics"]},
+        {"name": "Pre-Run Shop",  "count":1,"useful":true,      "category": ["Mechanics"]},
+        {"name": "Visions",       "count":1,"progression":true, "category": ["Mechanics"]},
+        {"name": "Subfloor Skips","count":1,"useful":true,      "category": ["Mechanics"]},
 
         {"name": "Damage Trap", "count":0, "trap":true, "category": ["Traps"], "_comment": "Check hook_get_filler_item_name in World.py for trap generation"},
         {"name": "Freeze Trap",  "count":0, "trap":true, "category": ["Traps"]},
