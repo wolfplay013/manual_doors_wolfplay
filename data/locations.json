@@ -6,7 +6,7 @@
         {"name": "Buddy System", 			"region": "Floor Prog 0","category": [ "General", "multiplayer_BuddySystem" ], "requires": ""},
         {"name": "Back From The Dead", 		"region": "Floor Prog 0","category": [ "General", "disable_BackFromTheDead" ], "requires": ""},
         {"name": "In Plain Sight", 			"region": "Floor Prog 0","category": [ "General" ], "requires": ""},
-        {"name": "One Of Many", 			"region": "Floor Prog 0",  "category": [ "General" ], "requires": "|@Location Keys:1|"},
+        {"name": "One Of Many", 			"region": "Floor Prog 0",  "category": [ "General" ], "requires": ""},
         {"name": "A Bone To Pick", 		    "region": "The Hotel 1","category": [ "General" ], "requires": "|Skeleton Key|"},
         {"name": "Picking Flowers",         "region": "The Outdoors","category": [ "General" ],"requires": "|Lotus|"},
         {"name": "Rebirth",                 "region": "The Outdoors","category": [ "General" ],"requires": "|Lotus|"},
