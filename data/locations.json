@@ -35,7 +35,7 @@
         {"name": "Everything Everywhere All At Once","region": "The Hotel 2",  "category": [ "Visions", "disable_ChaosMode" ], "requires": "|Visions| AND |Modifiers|"},
 
         {"name": "Out Of My Way", 				"region": "Floor Prog 0",   "category": [ "Entities" ], "requires": ""},
-        {"name": "You Can Run", 				"region": "Floor Prog 0", "category": [ "Entities" ], "requires": "|The Guiding Key:1| OR |The Hotel Key:1| OR |The Mines Key:2|"},
+        {"name": "You Can Run", 				"region": "Floor Prog 0", "category": [ "Entities" ], "requires": ""},
         {"name": "I See You", 					"region": "Floor Prog 0",   "category": [ "Entities" ], "requires": ""},
         {"name": "Wrong Room", 					"region": "Floor Prog 0",   "category": [ "Entities" ], "requires": ""},
         {"name": "Look At Me", 					"region": "Floor Prog 0",   "category": [ "Entities" ], "requires": ""},
