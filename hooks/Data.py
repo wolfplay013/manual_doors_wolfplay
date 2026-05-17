@@ -86,7 +86,7 @@ def after_load_location_file(location_table: list) -> list:
         temporary_count = temporary_count - 60
 
     location_table.extend(door_sanity)
-    
+
     return location_table
 
 # called after the events.json file has been loaded, before any processing has occurred

@@ -11,7 +11,7 @@
 
 	"Floor Prog 0": {"connects_to": ["Floor Prog 1", "The Hotel 1", "The Mines 1"], "requires": ""},
 	"Floor Prog 1": {"connects_to": ["Floor Prog 2", "The Hotel 2", "The Mines 2"], "requires": "|The Guiding Key:1| OR (|The Hotel Key:1| OR |The Mines Key:2|)"},
-	"Floor Prog 2": {"connects_to": [], "requires": "|The Guiding Key:2| OR (|The Hotel Key:2| OR |The Mines Key:2|)"},
+	"Floor Prog 2": {"connects_to": [], "requires": "|The Guiding Key:2| OR (|The Hotel Key:2| OR |The Mines Key:3|)"},
 	"Subfloor Prog":    {"connects_to": [], "requires": ""},
 
 	"The Rooms": 	{"connects_to": ["The Backdoor", "Subfloor Prog"], "requires": "|Skeleton Key| AND |Lockpick| AND ((|The Curious Key:1| OR |The Rooms Key:1|) AND (|The Guiding Key:1| OR |The Hotel Key:1|))"},

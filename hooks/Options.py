@@ -26,9 +26,6 @@ from typing import Type, Any
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
-# class achievement_Events(Toggle):
-#     """Enables every non-secret event achievement. If the achievements listed below are no longer active, disable this option or update your manual if it's possible."""
-
 class achievement_BuddySystem(DefaultOnToggle):
     """Buddy System (Multiplayer Achievement)
     Play a run with a friend."""
@@ -164,6 +161,16 @@ class achievement_Uptime(DefaultOnToggle):
     Keep up a Daily Streak for 7 days."""
     display_name = "UPTIME"
 
+class achievement_Uptime(Choice):
+    """UPTIME (Async Achievement)
+    Keep up a Daily Streak for 7 days.
+    If 'with_flame_item' is chosen, an additional item will be added that gives you an additional day to your streak for this achievement."""
+    display_name = "UPTIME"
+    option_with_flame_item = 0
+    option_enabled = 1
+    option_disabled = 2
+    default = option_with_flame_item
+
 class achievement_ChaosMode(DefaultOnToggle):
     """Everything Everywhere All At Once (Secret Achievement / Hard Achievement)
     Successfully escape The Hotel in the CHAOS Vision. If using livestream integration, requires at least 5 viewers."""
@@ -188,11 +195,43 @@ class option_DoorSanityRoomsType(Choice):
         all_checks: Adds all checks possible, 1 check per 1 door. Stops at 200 checks if the A-1000 achievement is disabled.
         limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors. Stops at 40 checks if the A-1000 achievement is disabled.
         no_check: Disables all checks in The Rooms subfloor."""
-    display_name = "Checks in The Rooms on Doorsanity"
+    display_name = "Doorsanity - The Rooms Checks"
     option_all_checks = 0
     option_limited = 1
     option_no_checks = 2
     default = option_limited
+
+class option_Deathsanity(Toggle):
+    """Deathsanity
+    Gives a check for every death you obtain.
+    Includes every single thing you can die to.
+    Includes 26 checks by default, however this can be expanded with the following options."""
+    display_name = "Doorsanity"
+
+class option_DeathsanityDuplicates(Range):
+    """Adds multiple checks per death found in Deathsanity. Doesn't apply to Special Deaths in the list."""
+    range_start = 1
+    range_end = 3
+    default = 1
+    display_name = "Doorsanity - Duplicate Deaths"
+
+class option_DeathsanityGlitch(Choice):
+    """Adds glitched entities to the list of deaths. See below for options.
+        default: Chooses between 'simple' or 'disabled', based on if the Trial and Error badge is enabled.
+        complex: Adds 3 individual deaths to the list for SCJVEREECH, AROxMBUSH, & RNIUSHCg== each.
+        simple: Adds 1 death to the list for all three entities, associates all of the glitched entities with glitch.
+        disabled: Completely removes all deaths regarding glitched entities."""
+    option_default = 0
+    option_complex = 1
+    option_simple = 2
+    option_disabled = 3
+    default = option_default
+    display_name = "Doorsanity - Glitched Entities"
+
+class option_DeathsanitySpecial(Toggle):
+    """Adds special death conditions based on death messages to the list of deaths.
+    Check the guide for more information."""
+    display_name = "Doorsanity - Special Deaths"
 
 class FillerTrapPercent(Range):
     """How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps."""
@@ -233,9 +272,11 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
+    options["deathsanity"] = option_Deathsanity
+    options["glitch_deathsanity"] = option_DeathsanityGlitch
+    options["duplicate_deathsanity"] = option_DeathsanityDuplicates
+    options["special_deathsanity"] = option_DeathsanitySpecial
     options["filler_traps"] = FillerTrapPercent
-    # options["event_achievements"] = achievement_Events
-
     return options
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
 def after_options_defined(options: Type[PerGameCommonOptions]):

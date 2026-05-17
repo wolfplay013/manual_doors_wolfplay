@@ -40,7 +40,15 @@
     "notsimple_doorsanity": {"hidden": true},
     "veryhigh_doorsanity":  {"hidden": true},
     "HundredOfMany":        {"hidden": true},
-    "Events":               {"yaml_option": ["event_achievements"]},
-    
-    "misc_options": {"hidden":true, "yaml_option": ["doorsanity", "rooms_doorsanity"]}
+    "UptimeFlame":          {"hidden": true},
+    "itemGloombatDislike":  {"hidden": true},
+    "disable_Deathsanity":   {"hidden": true},
+    "deathsanity_glitch":   {"hidden": true},
+    "deathsanity_complexglitch":    {"hidden": true},
+    "deathsanity_simpleglitch":     {"hidden": true},
+    "deathsanity_special": {"hidden": true},
+    "single_death": {"hidden": true},
+    "multi_death": {"hidden": true},
+    "death_no_2": {"hidden": true},
+    "death_no_3": {"hidden": true}
 }
