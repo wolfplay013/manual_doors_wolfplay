@@ -1,4 +1,5 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
+from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item
 
@@ -35,8 +36,10 @@ import logging
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
-    valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Purchase"]
-    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap"]
+    valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Voucher"]
+    if multiworld.worlds[player].options.battle_mode_secrets:
+        valid_filler.append("Battle Mode Pass")
+    valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap", "Modifier Trap"]
     total_unfilled_amount = len(multiworld.get_unfilled_locations(player=player))
     trap_unfilled_amount = total_unfilled_amount * (multiworld.worlds[player].options.filler_traps / 100)
 
@@ -47,6 +50,13 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
         return multiworld.random.choice(valid_traps)
     else:
         return False
+
+def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
+    """
+    This is the earliest hook called during generation, before anything else is done.
+    Use it to check or modify incompatible options, or to set up variables for later use.
+    """
+    pass
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
@@ -85,9 +95,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
     if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key"] # List of item names
-    elif is_option_enabled(multiworld, player, "floor_2") == False:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key"] # List of item names
+        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
 
     # Add your code here to calculate which items to remove.
     #
@@ -199,3 +207,10 @@ def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: 
 
 def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
     pass
+
+def hook_interpret_slot_data(world: World, player: int, slot_data: dict[str, Any]) -> dict[str, Any]:
+    """
+        Called when Universal Tracker wants to perform a fake generation
+        Use this if you want to use or modify the slot_data for passed into re_gen_passthrough
+    """
+    return slot_data

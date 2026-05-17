@@ -1,0 +1,32 @@
+## Deathsanity Special Deaths
+Special deaths can be turned on or off when you enable the Deathsanity option. The full list of special death conditions can be found below.
+- Rush
+    - Died while being kicked out by Hide
+    - Denied hiding spot occupied by Hide
+    - Died while in Greenhouse
+    - Died while trapped by Snare
+    - Died while starlit by Starlight Vial
+    - Died while in The Mines
+    - Died while in The Hotel
+    - Died while being attacked by Giggle
+- Hide
+    - Died while in The Hotel
+    - Died while in The Mines
+- Seek
+    - Caught while stuck on the first obstacle
+    - Caught while in the end hallway
+    - Caught by the Hands in the end hallway
+    - Burnt by the Fallen Chandeliers
+    - Caught while in The Mines
+    - Caught while in a Minecart
+    - Drowned while in The Dam
+    - Caught by Seeks Minions while in The Dam
+- Ambush 
+    - Died while being kicked out by Hide
+- Figure
+    - Died after opening up Door 51
+    - Died after powering the elevator
+    - Died after failing the heartbeat minigame
+- Grumble
+    - Eaten while in The Nest
+    - Eaten during a Seek Chase in The Sewage Pipes

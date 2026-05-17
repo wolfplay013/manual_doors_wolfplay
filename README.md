@@ -1,5 +1,5 @@
 ![The Archipelago Randomizer logo with Doors related images on every circle, next to the logo is the Doors logo and the word "Archipelago" in the Doors font. The "Archi" part in "Archipelago" is highlighted in a Cyan-Yellow-Red gradient.](https://file.garden/ZgF3xxdyQ318Tt1G/Archipelago/doorsarchipelago_text.svg)
-An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](https://www.roblox.com/games/6516141723/DOORS). This manual is intended to be played from a new account, however it is possible to play from an existing account.
+An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](https://www.roblox.com/games/6516141723/DOORS). This manual can be played from both a new or an old account. [**You may download the manual on this link here.**](https://github.com/wolfplay013/manual_doors_wolfplay/releases)
 
 All game information can be found below.
 
@@ -11,51 +11,53 @@ When the player receives an item, they may get either a key that allows them to 
 Victory is achieved when the player escapes The Backdoor.
 ## what are the available items?
 The player can get keys which unlock certain milestones in the main floors, or certain subfloors.
-- **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game. If the "Individual Floor Keys" setting is enabled, the following items are used instead.
-- **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms subfloor, the second stage unlocks The Backdoor subfloor.
+- **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game.
+- **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms & The Outdoors subfloors, the second stage unlocks The Backdoor subfloor.
 
-The player can also get items that unlock items, every item in doors is a single item in the multiworld, however there are a few exceptions to this.
-- **Progressive Candle** & **Progressive Smoothie** are items, where the normal variant is the first stage of the item, and the rifted variant is the second stage of the item. Both are concidered progressive due to the achievement requiring you to turn the item into the rifted variant.
-- **Starlight Liquids** is an item that unlocks 3 items. The item unlocks the **Vial of Starlight**, **Bottle of Starlight** & **Barrel of Starlight**.
+If the "Individual Floor Keys" setting is enabled, the following items are used instead.
+- **The Hotel Key** There are 2 stages of this item. First stage unlocks Door 50, second stage unlocks Door 100.
+- **The Mines Key** There are 3 stages of this item. First stage unlocks the floor, second stage unlocks Door 142, third stage unlocks Door 200.
+- **The Rooms Key** Unlocks The Rooms subfloor.
+- **The Outdoors Key** Unlocks The Outdoors subfloor.
+- **The Backdoor Key** Unlocks The Backdoor subfloor. Note that this still requires you to visit any subfloor!
+
+The player can also get items that unlock items, every item in doors is a single item in the multiworld, rift variants are however made into progressive items. (e.g.**Progressive Candle**, **Progressive Smoothie**, & **Progressive Jars**)
 
 The player can also unlock specific mechanics. There are currently only 3 mechanics that are items in the multiworld.
 - **The Rift** Unlocks the ability to put items in The Rift & The Golden Rift.
 - **Modifiers** Unlocks the ability to use Modifiers in runs.
 - **Pre-Run Shop** Unlocks the ability to buy items from the Pre-Run Shop. This also requires the item to be unlocked.
+- **Visions** Unlocks the ability to have visions. 
+- **Subfloor Skips** Unlocks the ability to skip to subfloors using stardust. Note that this still requires the keys for the subfloor!
 
 The player can get temporary items which can help them out in the game, before they have an item or a mechanic unlocked.
 - **Temporary Light-source** Gives you the ability to use a light-source only once. Only applies for a single item, doesn't allow you to rift it.
-- **Temporary Utility** Allows you to use any non-light emitting item in every way that doesn't obtain you an achievement. (e.g. lockpicks are allowed, but you cannot use them for The Rooms. crucifix isn't allowed because it always gets you an achievement)
-- **Pre-Run Shop Purchase** Allows you to buy an item from the Pre-Run Shop without needing the mechanic item.
-- **Death Pack** Gains you 10 deaths for the Hundred Of Many achievement, enabled with a specific setting regarding the achievement.
+- **Temporary Utility** Allows you to use any non-light emitting item in every way that doesn't obtain you an achievement. (e.g. lockpicks are allowed, but you cannot use them for The Rooms. crucifix isn't allowed because it always gets you an achievement) Starlight items count towards this item.
+- **Pre-Run Shop Voucher** Allows you to buy an item from the Pre-Run Shop without needing the Pre-Run Shop item.
+- **Battle Mode Pass** Allows you to bypass the Visions unlock requirement for Battle Mode only once.
 
 The player can get traps that hinder them in their journey.
 - **Damage Trap** The player must try to get damaged in any way, amount of damage doesn't matter.
 - **Freeze Trap** The player cannot move for the next 20 seconds.
 - **Butterfingers Trap** The player must throw all of their items away, they cannot pick them back up.
+- **In Plain Sight Trap** The player cannot hide for the next 10 doors.
+- **Modifier Trap** The player must enable a random modifier ("Uh oh!", to be specific) on the next run.
 
 ## what are the available options?
 
-You may disable achievements that could be concidered **Multiplayer**, **Sync Unfriendly**, **Tedious**.
-
-These are the achievements under these categories: **Welcome Back**, **Buddy System**, **Betrayal**, **Hundred Of Many**, **Error**, **Meet Jack**, **Trial And Error**, **Helping Hand**, **A-1000**, **Hotel Hell**, and **A Hard Place**.
-
-Additionally, a few achievements are bundled together, these are: **It Stares Back** & **Lost In The Dark**, **Playtime** & **Playtime's Over**, and All of the Crucifix Achievements.
+You may disable all Secret achievements, as well as a couple of achievements that aren't secret but deserve to have the ability to be removed.
 
 There are a few special settings that may alter the gameplay in a major way.
 - **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.
 - **Doorsanity** Sanity setting that adds a check for every door. Settings may remove checks to make it more fair (e.g. The Rooms having less checks, disabling A-1000)
-
-There are a few legacy settings that change the behavior of the manual to match a previous version.
-- **Floor 2** Once disabled, all Floor 2 items, achievements, and other things regarding it is disabled.
-- **April Fools 2025** Enables the 2025 April Fools achievements from Version 0.5.555555555555, that added Unobtainable and Scrapped achievements.
-
-There are some system settings that are supported by the manual.
-- **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to die in some way yourself. (e.g. leaving, dying to entities, etc)
+- **Deathsanity** Sanity setting that adds a check for entity death. Settings may add checks if wanted (e.g. Special Death Conditions, Multi-deaths). A list of Special Death Conditions can be found [here](https://github.com/wolfplay013/manual_doors_wolfplay/blob/main/README.md).
+- **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to intentionally die in-game. (e.g. leaving, dying to entities, etc)
 - **Filler Traps** Mixes in traps by the specified percentage, by default 15% of all filler will be replaced by traps.
 
 ## misc information
 
 You may discuss the manual in the Archipelago Manual discord server, right within the Doors thread. [Find the discord here](https://discord.gg/T5bcsVHByx), [Find the thread here](https://canary.discord.com/channels/1097532591650910289/1230046028799934464)
+
+Universal Tracker reccomended for this manual. [Find the download to the APWorld here.](https://github.com/FarisTheAncient/Archipelago/releases/)
 
 "Doors Archipelago Logo", is adapted from the [Archipelago Logo](https://canary.discord.com/channels/731205301247803413/874776082946064394/1009265363600556094) (linked to the official discord) by Krista Corkos and Christopher Wilson, used under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/).

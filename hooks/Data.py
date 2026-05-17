@@ -76,10 +76,23 @@ def after_load_location_file(location_table: list) -> list:
             'category': ["Doorsanity (Backdoor)", "doorsanity"]
         })
         temporary_count = temporary_count + 1 
+    temporary_count = 2220
+    while temporary_count != 0:
+        door_sanity.append({
+            'name': f'{format(250+temporary_count, ",d")}m - The Outdoors',
+            'region': 'The Outdoors',
+            'category': ["Doorsanity (Outdoors)", "doorsanity"]
+        })
+        temporary_count = temporary_count - 60
 
     location_table.extend(door_sanity)
-    
+
     return location_table
+
+# called after the events.json file has been loaded, before any processing has occurred
+# If you need access to the events after processing, you should use the hooks in World.py
+def after_load_event_file(event_table: list) -> list:
+    return event_table
 
 # called after the locations.json file has been loaded, before any location loading or processing has occurred
 # if you need access to the locations after processing to add ids, etc., you should use the hooks in World.py
@@ -100,9 +113,3 @@ def after_load_option_file(option_table: dict) -> dict:
 # for more info check https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class
 def after_load_meta_file(meta_table: dict) -> dict:
     return meta_table
-
-# called when an external tool (eg Universal Tracker) ask for slot data to be read
-# use this if you want to restore more data
-# return True if you want to trigger a regeneration if you changed anything
-def hook_interpret_slot_data(world, player: int, slot_data: dict[str, any]) -> dict | bool:
-    return False
