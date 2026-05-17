@@ -216,7 +216,7 @@ class option_DeathsanityMainDuplicates(Range):
     display_name = "Doorsanity - Duplicate Deaths"
 
 class option_DeathsanitySubDuplicates(Range):
-    """Adds multiple checks per death in the subfloors for Deathsanity."""
+    """Adds multiple checks per death in the subfloors for Deathsanity. Glitched entites are considered as subfloor entities."""
     range_start = 1
     range_end = 3
     default = 1
