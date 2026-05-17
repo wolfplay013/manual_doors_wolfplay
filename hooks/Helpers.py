@@ -104,6 +104,27 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "M
                     return True
                 else:
                     return False
+
+    if "single_subdeath" in location["category"]:
+        if not options.duplicate_subfloor_deathsanity == 1:
+            return False
+        else:
+            return True
+    
+    if "multi_subdeath" in location["category"]:
+        if options.duplicate_subfloor_deathsanity == 1:
+            return False
+        else:
+            if "subdeath_no_3" in location["category"]:
+                if options.duplicate_subfloor_deathsanity >= 3:
+                    return True
+                else:
+                    return False
+            elif "subdeath_no_2" in location["category"]:
+                if options.duplicate_subfloor_deathsanity >= 2:
+                    return True
+                else:
+                    return False
     return None
             
 # Use this if you want to override the default behavior of is_option_enabled

@@ -203,17 +203,24 @@ class option_DoorSanityRoomsType(Choice):
 
 class option_Deathsanity(Toggle):
     """Deathsanity
-    Gives a check for every death you obtain.
+    Gives a check for every death you obtain. Not recommended to enable with Deathlink on.
     Includes every single thing you can die to.
     Includes 26 checks by default, however this can be expanded with the following options."""
     display_name = "Doorsanity"
 
-class option_DeathsanityDuplicates(Range):
-    """Adds multiple checks per death found in Deathsanity. Doesn't apply to Special Deaths in the list."""
+class option_DeathsanityMainDuplicates(Range):
+    """Adds multiple checks per death in the main floors for Deathsanity. Doesn't apply to special deaths, or subfloor deaths in the list."""
     range_start = 1
     range_end = 3
     default = 1
     display_name = "Doorsanity - Duplicate Deaths"
+
+class option_DeathsanitySubDuplicates(Range):
+    """Adds multiple checks per death in the subfloors for Deathsanity."""
+    range_start = 1
+    range_end = 3
+    default = 1
+    display_name = "Doorsanity - Duplicate Subfloor Deaths"
 
 class option_DeathsanityGlitch(Choice):
     """Adds glitched entities to the list of deaths. See below for options.
@@ -274,7 +281,8 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["rooms_doorsanity"] = option_DoorSanityRoomsType
     options["deathsanity"] = option_Deathsanity
     options["glitch_deathsanity"] = option_DeathsanityGlitch
-    options["duplicate_deathsanity"] = option_DeathsanityDuplicates
+    options["duplicate_deathsanity"] = option_DeathsanityMainDuplicates
+    options["duplicate_subfloor_deathsanity"] = option_DeathsanitySubDuplicates
     options["special_deathsanity"] = option_DeathsanitySpecial
     options["filler_traps"] = FillerTrapPercent
     return options
