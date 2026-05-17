@@ -1,5 +1,5 @@
 ![The Archipelago Randomizer logo with Doors related images on every circle, next to the logo is the Doors logo and the word "Archipelago" in the Doors font. The "Archi" part in "Archipelago" is highlighted in a Cyan-Yellow-Red gradient.](https://file.garden/ZgF3xxdyQ318Tt1G/Archipelago/doorsarchipelago_text.svg)
-An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](https://www.roblox.com/games/6516141723/DOORS). This manual can be played from both a new or an old account. [**You may download the manual on this link here.**](https://github.com/wolfplay013/manual_doors_wolfplay/releases)
+An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](https://www.roblox.com/games/6516141723/DOORS). This manual can be played from both a new or an old account. [**You may download the manual using this link here.**](https://github.com/wolfplay013/manual_doors_wolfplay/releases)
 
 All game information can be found below.
 
@@ -50,7 +50,7 @@ You may disable all Secret achievements, as well as a couple of achievements tha
 There are a few special settings that may alter the gameplay in a major way.
 - **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.
 - **Doorsanity** Sanity setting that adds a check for every door. Settings may remove checks to make it more fair (e.g. The Rooms having less checks, disabling A-1000)
-- **Deathsanity** Sanity setting that adds a check for entity death. Settings may add checks if wanted (e.g. Special Death Conditions, Multi-deaths). A list of Special Death Conditions can be found [here](https://github.com/wolfplay013/manual_doors_wolfplay/blob/main/README.md).
+- **Deathsanity** Sanity setting that adds a check for entity death. Settings may add checks if wanted (e.g. Special Death Conditions, Multi-deaths). A list of Special Death Conditions can be found [here](https://github.com/wolfplay013/manual_doors_wolfplay/blob/main/DEATHSANITY.md).
 - **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to intentionally die in-game. (e.g. leaving, dying to entities, etc)
 - **Filler Traps** Mixes in traps by the specified percentage, by default 15% of all filler will be replaced by traps.
 
