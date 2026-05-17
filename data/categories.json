@@ -50,5 +50,10 @@
     "single_death": {"hidden": true},
     "multi_death": {"hidden": true},
     "death_no_2": {"hidden": true},
-    "death_no_3": {"hidden": true}
+    "death_no_3": {"hidden": true},
+    "single_subdeath": {"hidden": true},
+    "multi_subdeath": {"hidden": true},
+    "subdeath_no_2": {"hidden": true},
+    "subdeath_no_3": {"hidden": true}
 }
+
