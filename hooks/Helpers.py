@@ -125,41 +125,6 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "M
                     return True
                 else:
                     return False
-
-    if "Goal" in location["category"]:
-        if options.goal_floor == "the_rooms":
-            if not "roomsgoal" in location["category"]:
-                return False
-        elif options.goal_floor == "the_outdoors":
-            if not "outdoorsgoal" in location["category"]:
-                return False
-        elif options.goal_floor == "the_backdoor":
-            if not "backdoorgoal" in location["category"]:
-                return False
-        elif options.goal_floor == "the_hotel":
-            if not "hotelgoal" in location["category"]:
-                return False
-        elif options.goal_floor == "the_mines":
-            if not "minesgoal" in location["category"]:
-                return False
-
-    if "Goal" in location["category"]:
-        if options.goal_extra_modifier == "0percent":
-            if not "0modifier" in location["category"]:
-                return False
-        if options.goal_extra_modifier == "50percent":
-            if not "50modifier" in location["category"]:
-                return False
-        if options.goal_extra_modifier == "100percent":
-            if not "100modifier" in location["category"]:
-                return False
-        if options.goal_extra_modifier == "150percent":
-            if not "150modifier" in location["category"]:
-                return False
-        if options.goal_extra_modifier == "chaosmode":
-            if not "chaosmodemodifier" in location["category"]:
-                return False
-
     return None
             
 # Use this if you want to override the default behavior of is_option_enabled

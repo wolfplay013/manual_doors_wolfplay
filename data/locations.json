@@ -111,24 +111,7 @@
         {"name": "Ring Out",         "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8| AND |Boxing Gloves|"},
         {"name": "Battler",          "region": "The Lobby",     "category": [ "Battle", "secret_BattleMode","secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},
 
-        {"name": "Beat The Backdoor", "region": "The Backdoor", "category": ["Goal", "backdoorgoal", "0modifier", "50modifier", "100modifier", "150modifier"], "requires": "", "victory":true},
-        {"name": "Beat The Outdoors", "region": "The Outdoors", "category": ["Goal", "outdoorsgoal", "0modifier", "50modifier", "100modifier", "150modifier"], "requires": "", "victory":true},
-        {"name": "Beat The Rooms",    "region": "The Rooms",    "category": ["Goal", "roomsgoal", "0modifier", "50modifier", "100modifier", "150modifier"], "requires": "", "victory":true},
-        {"name": "Beat The Backdoor with Chaos Mode",     "region": "The Backdoor",  "category": ["Goal", "backdoorgoal", "chaosmodemodifier"], "requires": "|Modifiers| AND |Visions|", "victory":true},
-        {"name": "Beat The Outdoors with Chaos Mode",     "region": "The Outdoors",  "category": ["Goal", "outdoorsgoal", "chaosmodemodifier"], "requires": "|Modifiers| AND |Visions|", "victory":true},
-        {"name": "Beat The Rooms with Chaos Mode",        "region": "The Rooms",  "category": ["Goal", "roomsgoal", "chaosmodemodifier"], "requires": "|Modifiers| AND |Visions|", "victory":true},
-
-        {"name": "Beat The Hotel",                     "region": "The Hotel 2",  "category": ["Goal", "hotelgoal", "0modifier"], "requires": "", "victory":true},
-        {"name": "Beat The Hotel at 50% Modifiers",    "region": "The Hotel 2",  "category": ["Goal", "hotelgoal", "50modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Hotel at 100% Modifiers",   "region": "The Hotel 2",  "category": ["Goal", "hotelgoal", "100modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Hotel at 150% Modifiers",   "region": "The Hotel 2",  "category": ["Goal", "hotelgoal", "150modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Hotel with Chaos Mode",     "region": "The Hotel 2",  "category": ["Goal", "hotelgoal", "chaosmodemodifier"], "requires": "|Modifiers| AND |Visions|", "victory":true},
-
-        {"name": "Beat The Mines",                     "region": "The Mines 2",  "category": ["Goal", "minesgoal", "0modifier"], "requires": "", "victory":true},
-        {"name": "Beat The Mines at 50% Modifiers",    "region": "The Mines 2",  "category": ["Goal", "minesgoal", "50modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Mines at 100% Modifiers",   "region": "The Mines 2",  "category": ["Goal", "minesgoal", "100modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Mines at 150% Modifiers",   "region": "The Mines 2",  "category": ["Goal", "minesgoal", "150modifier"], "requires": "|Modifiers|", "victory":true},
-        {"name": "Beat The Mines with Chaos Mode",     "region": "The Mines 2",  "category": ["Goal", "minesgoal", "chaosmodemodifier"], "requires": "|Modifiers| AND |Visions|", "victory":true},
+        {"name": "Beat the Backdoor", "region": "The Backdoor", "category": ["Goal"], "requires": "", "victory":true},
 
         {"name": "Deathsanity (Rush)", "region": "Floor Prog 0",        "category": [ "disable_Deathsanity", "Deathsanity", "single_death" ], "requires": "", "_comment":"These deaths show up if you enable the deathsanity option with One Death."},
         {"name": "Deathsanity (Hide)", "region": "Floor Prog 0",        "category": [ "disable_Deathsanity", "Deathsanity", "single_death" ], "requires": ""},

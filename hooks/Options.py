@@ -183,29 +183,6 @@ class option_IndividualFloorKeys(Toggle):
     Key #1 unlocks the floor itself, Key #2 unlocks the midway point, Key #3 unlocks the last door."""
     display_name = "Individual Floor Keys"
 
-class option_FloorGoal(Choice):
-    """Floor Goal
-    Choose a floor for the goal."""
-    display_name = "Floor Goal"
-    option_the_hotel = 0
-    option_the_mines = 1
-    option_the_rooms = 2
-    option_the_outdoors = 3
-    option_the_backdoor = 4
-    default = option_the_backdoor
-
-class option_ExtraGoalOptions(Choice):
-    """Extra Modifier Goal
-    Choose an extra requirement for the goal. Modifier percentage options are ignored for subfloor goals.
-    Chaos Mode requires you to enable the Chaos Mode modifier for the floor. Chaos Mode is supported for subfloors for players with Admin Panel."""
-    display_name = "Extra Modifier Goal"
-    option_0percent = 0
-    option_50percent = 1
-    option_100percent = 2
-    option_150percent = 3
-    option_chaosmode = 4
-    default = option_0percent
-
 class option_Doorsanity(Toggle):
     """Doorsanity
     Gives a check for every door that you open up.
@@ -239,7 +216,7 @@ class option_DeathsanityMainDuplicates(Range):
     display_name = "Doorsanity - Duplicate Deaths"
 
 class option_DeathsanitySubDuplicates(Range):
-    """Adds multiple checks per death in the subfloors for Deathsanity. Glitched entites are considered as subfloor entities."""
+    """Adds multiple checks per death in the subfloors for Deathsanity."""
     range_start = 1
     range_end = 3
     default = 1
@@ -298,8 +275,6 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["daily_runs"] = achievement_DailyRuns
     options["chaos_mode"] = achievement_ChaosMode
 
-    options["goal_floor"] = option_FloorGoal
-    options["goal_extra_modifier"] = option_ExtraGoalOptions
     options["all_crucifix"] = achievement_SecretCrucifix
     options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
