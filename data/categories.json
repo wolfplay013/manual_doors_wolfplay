@@ -50,5 +50,19 @@
     "single_death": {"hidden": true},
     "multi_death": {"hidden": true},
     "death_no_2": {"hidden": true},
-    "death_no_3": {"hidden": true}
+    "death_no_3": {"hidden": true},
+    "subsingle_death": {"hidden": true},
+    "submulti_death": {"hidden": true},
+    "subdeath_no_2": {"hidden": true},
+    "subdeath_no_3": {"hidden": true},
+    "hotelgoal": {"hidden": true},
+    "minesgoal": {"hidden": true},
+    "roomsgoal": {"hidden": true},
+    "outdoorsgoal": {"hidden": true},
+    "backdoorgoal": {"hidden": true},
+    "0modifier": {"hidden": true},
+    "50modifier": {"hidden": true},
+    "100modifier": {"hidden": true},
+    "150modifier": {"hidden": true},
+    "chaosmodemodifier": {"hidden": true}
 }
