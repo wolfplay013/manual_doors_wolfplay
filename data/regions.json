@@ -15,6 +15,6 @@
 	"Subfloor Prog":    {"connects_to": [], "requires": ""},
 
 	"The Rooms": 	{"connects_to": ["The Backdoor", "Subfloor Prog"], "requires": "|Skeleton Key| AND |Lockpick| AND ((|The Curious Key:1| OR |The Rooms Key:1|) AND (|The Guiding Key:1| OR |The Hotel Key:1|))"},
-	"The Outdoors": {"connects_to": ["The Backdoor", "Subfloor Prog"], "requires": "|Skeleton Key| AND |Shears| AND ((|The Curious Key:1| OR |The Rooms Key:1|) AND (|The Guiding Key:1| OR |The Hotel Key:1|))"},
+	"The Outdoors": {"connects_to": ["The Backdoor", "Subfloor Prog"], "requires": "|Skeleton Key| AND |Shears| AND ((|The Curious Key:1| OR |The Outdoors Key:1|) AND (|The Guiding Key:1| OR |The Hotel Key:1|))"},
 	"The Backdoor": {"connects_to": ["Subfloor Prog"], "requires": "|The Curious Key:2| OR |The Backdoor Key:1|"}
 }

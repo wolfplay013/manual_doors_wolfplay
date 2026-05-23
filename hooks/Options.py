@@ -156,11 +156,6 @@ class achievement_CleanRun(DefaultOnToggle):
     Win any Daily Run on your first attempt."""
     display_name = "CLEAN RUN"
 
-class achievement_Uptime(DefaultOnToggle):
-    """UPTIME (Async Achievement)
-    Keep up a Daily Streak for 7 days."""
-    display_name = "UPTIME"
-
 class achievement_Uptime(Choice):
     """UPTIME (Async Achievement)
     Keep up a Daily Streak for 7 days.
@@ -174,7 +169,7 @@ class achievement_Uptime(Choice):
 class achievement_ChaosMode(DefaultOnToggle):
     """Everything Everywhere All At Once (Secret Achievement / Hard Achievement)
     Successfully escape The Hotel in the CHAOS Vision. If using livestream integration, requires at least 5 viewers."""
-    display_name = "UPTIME"
+    display_name = "Everything Everywhere All At Once"
 
 class option_IndividualFloorKeys(Toggle):
     """Individual Floor Keys

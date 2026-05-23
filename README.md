@@ -41,7 +41,7 @@ The player can get traps that hinder them in their journey.
 - **Freeze Trap** The player cannot move for the next 20 seconds.
 - **Butterfingers Trap** The player must throw all of their items away, they cannot pick them back up.
 - **In Plain Sight Trap** The player cannot hide for the next 10 doors.
-- **Modifier Trap** The player must enable a random modifier ("Uh oh!", to be specific) on the next run.
+- **Modifier Trap** The player must enable a random modifier ("Uh oh!", to be specific) on the next run. This can be ignored if not unlocked on the account.
 
 ## what are the available options?
 

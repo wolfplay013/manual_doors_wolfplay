@@ -168,7 +168,7 @@
         {"name": "Deathsanity (Seek / Drowned while in The Dam)", "region": "The Mines 2",                  "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
         {"name": "Deathsanity (Seek / Caught by Seeks Minions while in The Dam)", "region": "The Mines 2",  "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
 
-        {"name": "Deathsanity (Ambush / Died while being kicked out by Hide)", "region": "Floor Prog 0", "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
+        {"name": "Deathsanity (Ambush / Died while being kicked out by Hide)", "region": "Floor Prog 1", "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
 
         {"name": "Deathsanity (Figure / Died after opening up Door 51)", "region": "The Hotel 1",               "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
         {"name": "Deathsanity (Figure / Died after powering the elevator)", "region": "The Hotel 2",            "category": [ "disable_Deathsanity", "deathsanity_special", "Deathsanity (Special)" ], "requires": ""},
