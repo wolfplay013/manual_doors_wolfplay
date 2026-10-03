@@ -36,7 +36,7 @@ import logging
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
-    valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Voucher"]
+    valid_filler = ["Temporary Light Item", "Temporary Utility Item", "Pre-Run Shop Voucher"]
     if multiworld.worlds[player].options.battle_mode_secrets:
         valid_filler.append("Battle Mode Pass")
     valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap", "Modifier Trap"]
@@ -88,14 +88,12 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    return item_pool
-
-# The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
+    return item_pool## cessed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
-    if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
+    # if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
+    #     itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
 
     # Add your code here to calculate which items to remove.
     #

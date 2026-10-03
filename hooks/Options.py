@@ -171,18 +171,10 @@ class achievement_ChaosMode(DefaultOnToggle):
     Successfully escape The Hotel in the CHAOS Vision. If using livestream integration, requires at least 5 viewers."""
     display_name = "Everything Everywhere All At Once"
 
-class option_IndividualFloorKeys(Toggle):
-    """Individual Floor Keys
-    Experimental option, changes the progression of the game in a way where you can access The Mines before The Hotel.
-    Every floor exceept for subfloors get 3 keys, with the exception of The Hotel which skips the first key.
-    Key #1 unlocks the floor itself, Key #2 unlocks the midway point, Key #3 unlocks the last door."""
-    display_name = "Individual Floor Keys"
-
 class option_Doorsanity(Toggle):
     """Doorsanity
     Gives a check for every door that you open up.
-    Includes 450 checks by default, however this can be modified to be lower or higher through settings.
-    Disabling Floor 2 will disable all 100 checks for that floor."""
+    Includes 450 checks by default, however this can be modified to be lower or higher through settings."""
     display_name = "Doorsanity"
 
 class option_DoorSanityRoomsType(Choice):

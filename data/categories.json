@@ -35,7 +35,8 @@
     "disable_ChaosMode":           {"hidden": true, "yaml_option": ["chaos_mode"]},
 
     "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
-    "FloorKeys":            {"hidden": true, "yaml_option": ["individual_floor_keys"]},
+    "FloorKeys":            {"hidden": true},
+    "Items":                {"hidden": true},
     "doorsanity":           {"hidden": true},
     "notsimple_doorsanity": {"hidden": true},
     "veryhigh_doorsanity":  {"hidden": true},
