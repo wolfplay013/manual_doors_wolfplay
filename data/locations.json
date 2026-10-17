@@ -138,7 +138,7 @@
         {"name": "Rocky Road", 		 "region": "The Mines 2", 	"category": [ "Achievements - Challenges" ], "requires": "|Modifiers|"},
         {"name": "A Hard Place", 	 "region": "The Mines 2", 	"category": [ "Achievements - Challenges", "disable_AHardPlace" ], "requires": "|Modifiers|"},
         {"name": "Star Employee",    "region": "The Archives 1","category": [ "Achievements - Challenges" ], "requires": "|Backdoor Key| AND |Starlight Bottle|"},
-        {"name": "Storage Wars",     "region": "The Stairwell 1","category": [ "Achievements - Challenges" ], "requires": "|@Salvage Items:ALL|"},
+        {"name": "Storage Wars",     "region": "The Stairwell 1","category": [ "Achievements - Challenges", "secret_StorageWars" ], "requires": "|@Salvage Items:ALL|"},
         
         {"name": "Winner",           "region": "The Lobby",     "category": [ "Achievements - Battle", "secret_BattleMode" ], "requires": "|Visions| AND |@BattleItems:8|"},
         {"name": "Winner Winner",    "region": "The Lobby",     "category": [ "Achievements - Battle", "secret_BattleMode", "secret_CoolBattleMode" ], "requires": "|Visions| AND |@BattleItems:12|"},

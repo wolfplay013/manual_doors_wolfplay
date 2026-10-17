@@ -10,9 +10,12 @@
     "secret_Betrayal":             {"hidden": true, "yaml_option": ["betrayal"]},
     "secret_TenOfMany":            {"hidden": true, "yaml_option": ["ten_of_many"]},
     "secret_HundredOfMany":        {"hidden": true, "yaml_option": ["hundred_of_many"]},
-    "secret_Doh":                  {"hidden": true, "yaml_option": ["doh"]},
     "secret_FeedTheBirds":         {"hidden": true, "yaml_option": ["feed_the_birds"]},
-    "secret_YouFinallyTurnGreen":  {"hidden": true, "yaml_option": ["you_finally_turn_green"]},
+    "secret_REDACTED":             {"hidden": true, "yaml_option": ["redacted"]},
+    "secret_Patience":             {"hidden": true, "yaml_option": ["patience"]},
+    "secret_MissionSuccessful":    {"hidden": true, "yaml_option": ["mission_successful"]},
+    "secret_DustToDust":           {"hidden": true, "yaml_option": ["dust_to_dust"]},
+    "secret_ClayWorld":            {"hidden": true, "yaml_option": ["clay_world"]},
 
     "multiplayer_HelpingHand":     {"hidden": true, "yaml_option": ["helping_hand"]},
     "secret_ItStaresBack":         {"hidden": true, "yaml_option": ["it_stares_back"]},
@@ -20,10 +23,23 @@
     "secret_Error":                {"hidden": true, "yaml_option": ["error"]},
     "secret_MeetJack":             {"hidden": true, "yaml_option": ["meet_jack"]},
     "secret_TrialAndError":        {"hidden": true, "yaml_option": ["trial_and_error"]},
+    "secret_WhoAmI":               {"hidden": true, "yaml_option": ["who_am_i"]},
+    "secret_CongaLine":            {"hidden": true, "yaml_option": ["conga_line"]},
+    "secret_FriendBall":           {"hidden": true, "yaml_option": ["friend_ball"]},
     
-    "secret_A1000":                {"hidden": true, "yaml_option": ["a_1000"]},
+    "secret_YouFinallyTurnGreen":       {"hidden": true, "yaml_option": ["you_finally_turn_green"]},
+    "secret_Doh":                       {"hidden": true, "yaml_option": ["doh"]},
+    "secret_EmancipationCustomization": {"hidden": true, "yaml_option": ["emancipation_cutomization"]},
+    "secret_CrackedGamer":              {"hidden": true, "yaml_option": ["cracked_gamer"]},
+    "secret_FLashPoint":                {"hidden": true, "yaml_option": ["flash_point"]},
+
+    "IndividualCrucifix":       {"hidden": true, "yaml_option": ["all_crucifix"]},
+    "secret_CharlesDrowned":    {"hidden": true, "yaml_option": ["charles_drowned"]},
+
     "disable_HotelHell":            {"hidden": true, "yaml_option": ["hotel_hell"]},
     "disable_AHardPlace":           {"hidden": true, "yaml_option": ["a_hard_place"]},
+    "disable_StarEmployee":         {"hidden": true, "yaml_option": ["star_employee"]},
+    "secret_StorageWars":           {"hidden": true, "yaml_option": ["storage_wars"]},
 
     "secret_BattleMode":           {"hidden": true, "yaml_option": ["battle_mode_secrets"]},
     "secret_CoolBattleMode":       {"hidden": true, "yaml_option": ["battle_mode_hard_secrets"]},
@@ -34,7 +50,6 @@
     "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
     "disable_ChaosMode":           {"hidden": true, "yaml_option": ["chaos_mode"]},
 
-    "IndividualCrucifix":   {"hidden": true, "yaml_option": ["all_crucifix"]},
     "FloorKeys":            {"hidden": true},
     "Items":                {"hidden": true},
     "doorsanity":           {"hidden": true},
