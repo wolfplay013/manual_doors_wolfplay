@@ -18,6 +18,7 @@ def after_load_location_file(location_table: list) -> list:
     door_sanity = []
     temporary_count = 1
 
+    # The Hotel (100 Doors)
     while temporary_count != 101:
         if temporary_count < 50:
             doorsanity_region = "The Hotel 0"
@@ -28,10 +29,11 @@ def after_load_location_file(location_table: list) -> list:
         door_sanity.append({
                 'name': f'Door {"%04d" % temporary_count} - The Hotel',
                 'region': doorsanity_region,
-                'category': ["Doorsanity (Hotel)", "doorsanity"]
+                'category': ["Doorsanity - The Hotel", "doorsanity"]
             })
         temporary_count = temporary_count + 1
 
+    # The Mines (100 Doors)
     while temporary_count != 201:
         if temporary_count < 142:
             doorsanity_region = "The Mines 0"
@@ -42,48 +44,76 @@ def after_load_location_file(location_table: list) -> list:
         door_sanity.append({
                 'name': f'Door {"%04d" % temporary_count} - The Mines',
                 'region': doorsanity_region,
-                'category': ["Doorsanity (Mines)", "doorsanity"]
+                'category': ["Doorsanity - The Mines", "doorsanity"]
             })
         temporary_count = temporary_count + 1
+
+    # The Archives (1300 Doors, All Sectors)
     temporary_count = 1
-    while temporary_count != 201:
-        if temporary_count % 5 == 0:
-            rooms_categories = ["Doorsanity (Rooms)", "doorsanity"]
-        else:
-            rooms_categories = ["Doorsanity (Rooms)", "doorsanity", "notsimple_doorsanity"]
+    sector_number = 65 # start from 65 (A in ASCII)
+    while sector_number < 91: # ends at 90 (Z)
+        rooms_categories = ["Doorsanity - The Archives", "doorsanity", "archives_allsectors"]
         door_sanity.append({
-                'name': f'A-{"%04d" % temporary_count} - The Rooms',
-                'region': "The Rooms",
+                'name': f'{chr(sector_number)}-{"%03d" % temporary_count} - The Archives',
+                'region': "The Archives 1",
+                'category': rooms_categories
+            })
+        if temporary_count != 50:
+            temporary_count = temporary_count + 1
+        else:
+            temporary_count = 1
+            sector_number = sector_number + 1
+
+    # The Archives (300 Doors, Any Sectors)
+    temporary_count = 1
+    while temporary_count != 301:
+        rooms_categories = ["Doorsanity - The Archives", "doorsanity", "archives_short"]
+        door_sanity.append({
+                'name': f'Door {"%03d" % temporary_count} - The Archives',
+                'region': "The Archives 1",
                 'category': rooms_categories
             })
         temporary_count = temporary_count + 1
-    while temporary_count != 1001:
-        if temporary_count % 5 == 0:
-            rooms_categories = ["Doorsanity (Rooms)", "doorsanity", "veryhigh_doorsanity"]
-        else:
-            rooms_categories = ["Doorsanity (Rooms)", "doorsanity", "notsimple_doorsanity", "veryhigh_doorsanity"]
-        door_sanity.append({
-                'name': f'A-{"%04d" % temporary_count} - The Rooms',
-                'region': "The Rooms",
-                'category': rooms_categories
-            })
-        temporary_count = temporary_count + 1
+
+    # The Backdoor (50 Doors)
     temporary_count = -50
     while temporary_count != 0:
         door_sanity.append({
             'name': f'Door {"%02d" % temporary_count} - The Backdoor',
-            'region': 'The Backdoor',
-            'category': ["Doorsanity (Backdoor)", "doorsanity"]
+            'region': 'The Backdoor 1',
+            'category': ["Doorsanity - The Backdoor", "doorsanity"]
         })
         temporary_count = temporary_count + 1 
+
+    # The Outdoors (35 Doors, Distance)
     temporary_count = 2220
     while temporary_count != 0:
         door_sanity.append({
             'name': f'{format(250+temporary_count, ",d")}m - The Outdoors',
-            'region': 'The Outdoors',
-            'category': ["Doorsanity (Outdoors)", "doorsanity"]
+            'region': 'The Outdoors 1',
+            'category': ["Doorsanity - The Outdoors", "doorsanity", "outdoors_distance"]
         })
         temporary_count = temporary_count - 60
+
+    # The Outdoors (35 Doors, Doors)
+    temporary_count = 0
+    while temporary_count != 36:
+        door_sanity.append({
+            'name': f'Door {"%02d" % temporary_count} - The Outdoors',
+            'region': 'The Outdoors 1',
+            'category': ["Doorsanity - The Outdoors", "doorsanity", "outdoors_doors"]
+        })
+        temporary_count = temporary_count + 1
+
+    # The Stairwell (99 Doors)
+    temporary_count = 1
+    while temporary_count != 100:
+        door_sanity.append({
+            'name': f'Landing {"%02d" % temporary_count} - The Stairwell',
+            'region': 'The Stairwell 1',
+            'category': ["Doorsanity - The Stairwell", "doorsanity"]
+        })
+        temporary_count = temporary_count + 1
 
     location_table.extend(door_sanity)
 

@@ -43,7 +43,7 @@ class achievement_BackFromTheDead(DefaultOnToggle):
 
 
 class achievement_WelcomeBack(DefaultOnToggle):
-    """Welcome Back (Secret Achievement)
+    """Welcome Back (Secret Achievement / Async Achievement)
     Join another day."""
     display_name = "Welcome Back"
 
@@ -98,7 +98,7 @@ class achievement_MeetTimothy(DefaultOnToggle):
 
 class achievement_Error(DefaultOnToggle):
     """Error (Secret Achievement / Multiplayer Achievement / Rare Achievement)
-    Enounter the Glitch."""
+    Encounter the Glitch."""
     display_name = "Error"
 
 class achievement_MeetJack(DefaultOnToggle):
@@ -132,7 +132,7 @@ class achievement_A1000(DefaultOnToggle):
     display_name = "A-1000"
 
 class achievement_BattleModeSecret(DefaultOnToggle):
-    """Secret Battle Mode Achievements (Secret Achievement)
+    """Battle Mode Achievements (Secret Achievement)
     Enables all Battle Mode-exclusive items and achievements, excluding Hard Achievements."""
     display_name = "Battle Mode Secret Achievements"
 
@@ -179,17 +179,17 @@ class option_Doorsanity(Toggle):
 
 class option_DoorSanityRoomsType(Choice):
     """The Rooms can be customised to be less severe. Disabling the A-1000 achievement can also make this shorter.
-        all_checks: Adds all checks possible, 1 check per 1 door. Stops at 200 checks if the A-1000 achievement is disabled.
-        limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors. Stops at 40 checks if the A-1000 achievement is disabled.
+        all_checks: Adds all checks possible, 1 check per 1 door.
+        limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors.
         no_check: Disables all checks in The Rooms subfloor."""
-    display_name = "Doorsanity - The Rooms Checks"
+    display_name = "Doorsanity - The Archives Checks"
     option_all_checks = 0
     option_limited = 1
     option_no_checks = 2
     default = option_limited
 
 class option_Deathsanity(Toggle):
-    """Deathsanity
+    """Deathsanity (⚠ Currently outdated, doesn't include any of the new entities.)
     Gives a check for every death you obtain. Not recommended to enable with Deathlink on.
     Includes every single thing you can die to.
     Includes 26 checks by default, however this can be expanded with the following options."""
