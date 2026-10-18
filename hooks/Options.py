@@ -152,20 +152,40 @@ class achievement_Doh(DefaultOnToggle):
     Eat a Donut."""
     display_name = "D'oh!"
 
-class achievement_ProGamer(DefaultOnToggle):
-    """Pro Gamer (New Achievement)
-    no spoilers :)"""
-    display_name = "D'oh!"
-
 class achievement_YouFinallyTurnGreen(DefaultOnToggle):
     """You Finally Turn Green (Secret Achievement)
     Drink a Gween Soda and finally turn green."""
     display_name = "You Finally Turn Green"
 
+class achievement_ProGamer(DefaultOnToggle):
+    """Pro Gamer (New Achievement)
+    no spoilers :)"""
+    display_name = "Pro Gamer"
+
+class achievement_EmancipationCustomization(DefaultOnToggle):
+    """Emancipation Customization (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Emancipation Customization"
+
+class achievement_CrackedGamer(DefaultOnToggle):
+    """Cracked Gamer (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Cracked Gamer"
+
+class achievement_FlashPoint(DefaultOnToggle):
+    """Flash Point (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Flash Point"
+
 class achievement_SecretCrucifix(DefaultOnToggle):
     """Every secret Crucifix achievement. (Secret Achievement)
-    Use a crucifix against every entity except for Rush, Ambush, Figure, & Seek."""
+    Use a crucifix against every entity except for Rush, Ambush, Figure, Seek, & Portrait."""
     display_name = "All Entity Crucifix Achievements"
+
+class achievement_CharlesDrowned(DefaultOnToggle):
+    """Charles Drowned (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Charles Drowned"
 
 class achievement_HotelHell(DefaultOnToggle):
     """Hotel Hell (Difficult Achievement)
@@ -176,6 +196,16 @@ class achievement_AHardPlace(DefaultOnToggle):
     """A Hard Place (Difficult Achievement)
     Escape The Mines with at least a 150% bonus using Modifiers."""
     display_name = "A Hard Place"
+
+class achievement_StarEmployee(DefaultOnToggle):
+    """Star Employee (Difficult Achievement)
+    Successfully organize the Mail Room, after giving Honcho something it shouldn't have."""
+    display_name = "Star Employee"
+
+class achievement_StorageWars(DefaultOnToggle):
+    """Storage Wars (Secret Achievement)
+    Bargain 3000 Gold from the hooded figure in The Stairwell."""
+    display_name = "Storage Wars"
 
 class achievement_BattleModeSecret(DefaultOnToggle):
     """Battle Mode Achievements (Secret Achievement)
@@ -219,20 +249,31 @@ class achievement_ChaosMode(DefaultOnToggle):
 
 class option_Doorsanity(Toggle):
     """Doorsanity
-    Gives a check for every door that you open up.
-    Includes 450 checks by default, however this can be modified to be lower or higher through settings."""
+    Gives a check for every door that you open up. (also includes landings in the stairwell)
+    Includes 684 checks by default, however this can be modified to be lower or higher through settings."""
     display_name = "Doorsanity"
 
-class option_DoorSanityRoomsType(Choice):
-    """The Rooms can be customised to be less severe. Disabling the A-1000 achievement can also make this shorter.
-        all_checks: Adds all checks possible, 1 check per 1 door.
-        limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors.
-        no_check: Disables all checks in The Rooms subfloor."""
+class option_DoorSanityArchivesType(Choice):
+    """The Archives can be customized to be less severe.
+        all_checks: Adds all checks in each sector.
+        300_checks: Gives you 300 doors to go through in total, no matter the sector.
+        no_checks: Disables all checks in The Archives subfloor."""
     display_name = "Doorsanity - The Archives Checks"
     option_all_checks = 0
-    option_limited = 1
+    option_300_checks = 1
     option_no_checks = 2
-    default = option_limited
+    default = option_300_checks
+
+class option_DoorSanityOutdoorsType(Choice):
+    """The Outdoors can be customized to give checks on different factors.
+        distance_checks: Adds a check for every 60 meters in the outdoors, up until 35 checks.
+        door_checks: Adds a check for every door in the outdoors. Caution with this option, as there's no door numbers in the outdoors!
+        no_checks: Disables all checks in The Outdoors subfloor."""
+    display_name = "Doorsanity - The Outdoors Checks"
+    option_distance_checks = 0
+    option_door_checks = 1
+    option_no_checks = 2
+    default = option_door_checks
 
 class option_Deathsanity(Toggle):
     """Deathsanity (⚠ Currently outdated, doesn't include any of the new entities.)
@@ -288,18 +329,39 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["betrayal"] = achievement_Betrayal
     options["ten_of_many"] = achievement_TenOfMany
     options["hundred_of_many"] = achievement_HundredOfMany
-    options["doh"] = achievement_Doh
     options["feed_the_birds"] = achievement_FeedTheBirds
-    options["you_finally_turn_green"] = achievement_YouFinallyTurnGreen
+    options["redacted"] = achievement_REDACTED
+    options["patience"] = achievement_Patience
+    options["mission_successful"] = achievement_MissionSuccessful
+    options["dust_to_dust"] = achievement_DustToDust
+    options["garage_sale"] = achievement_GarageSale
+    options["clay_world"] = achievement_ClayWorld
+
     options["helping_hand"] = achievement_HelpingHand
     options["it_stares_back"] = achievement_ItStaresBack
     options["meet_timothy"] = achievement_MeetTimothy
     options["error"] = achievement_Error
     options["meet_jack"] = achievement_MeetJack
     options["trial_and_error"] = achievement_TrialAndError
-    options["a_1000"] = achievement_A1000
+    options["who_am_i"] = achievement_WhoAmI
+    options["conga_line"] = achievement_CongaLine
+    options["friend_ball"] = achievement_FriendBall
+
+    options["doh"] = achievement_Doh
+    options["you_finally_turn_green"] = achievement_YouFinallyTurnGreen
+    options["pro_gamer"] = achievement_ProGamer
+    options["emancipation_customization"] = achievement_EmancipationCustomization
+    options["cracked_gamer"] = achievement_CrackedGamer
+    options["flash_point"] = achievement_FlashPoint
+
+    options["all_crucifix"] = achievement_SecretCrucifix
+    options["charles_drowned"] = achievement_CharlesDrowned
+
     options["hotel_hell"] = achievement_HotelHell
     options["a_hard_place"] = achievement_AHardPlace
+    options["star_employee"] = achievement_StarEmployee
+    options["storage_wars"] = achievement_StorageWars
+
     options["battle_mode_secrets"] = achievement_BattleModeSecret
     options["battle_mode_hard_secrets"] = achievement_BattleModeCool
     options["parallel_processing"] = achievement_ParallelProcessing
@@ -308,10 +370,9 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["daily_runs"] = achievement_DailyRuns
     options["chaos_mode"] = achievement_ChaosMode
 
-    options["all_crucifix"] = achievement_SecretCrucifix
-    options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
-    options["rooms_doorsanity"] = option_DoorSanityRoomsType
+    options["archives_doorsanity"] = option_DoorSanityArchivesType
+    options["outdoors_doorsanity"] = option_DoorSanityOutdoorsType
     options["deathsanity"] = option_Deathsanity
     options["glitch_deathsanity"] = option_DeathsanityGlitch
     options["duplicate_deathsanity"] = option_DeathsanityMainDuplicates

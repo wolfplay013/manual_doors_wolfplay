@@ -4,36 +4,30 @@ An Archipelago Randomizer Manual adaptation of the popular Roblox game [Doors](h
 All game information can be found below.
 
 ## what is considered a location check in doors?
-Location checks are completed when you complete various achievements in Doors. You may see your achievements in the main lobby, or on the Roblox page of Doors. There is also an option for location checks per every unique door number opened.
+Location checks are completed when you complete various achievements in Doors. You may see your achievements in the main lobby, or on the Roblox page of Doors. There's also options that allow optional checks, or disable certain achievements from giving out checks.
 ## when the player receives an item, what happens?
-When the player receives an item, they may get either a key that allows them to access an area, the ability to use an item (or multiple items), or a mechanic. The specifics can be found below.
+When the player receives an item, they may get either a key that allows them to access an area, or the ability to use an item. The specifics can be found below.
 ## what is the victory condition?
-Victory is achieved when the player escapes The Backdoor.
+The player may set their victory in the settings, victories include escaping a floor, obtaining a rare item, or achieving a certain challenge.
 ## what are the available items?
-The player can get keys which unlock certain milestones in the main floors, or certain subfloors.
-- **The Guiding Key** There are 4 stages of this item, that respectively unlock Door 50, 100, 142 and 200. All of these are before major bosses in the game.
-- **The Curious Key** There are 2 stages of this item. First stage unlocks The Rooms & The Outdoors subfloors, the second stage unlocks The Backdoor subfloor.
+All non-essential items (items that count towards your item slot limit) can be unlocked as items. (alongside **Garage Key**)
 
-If the "Individual Floor Keys" setting is enabled, the following items are used instead.
-- **The Hotel Key** There are 2 stages of this item. First stage unlocks Door 50, second stage unlocks Door 100.
-- **The Mines Key** There are 3 stages of this item. First stage unlocks the floor, second stage unlocks Door 142, third stage unlocks Door 200.
-- **The Rooms Key** Unlocks The Rooms subfloor.
-- **The Outdoors Key** Unlocks The Outdoors subfloor.
-- **The Backdoor Key** Unlocks The Backdoor subfloor. Note that this still requires you to visit any subfloor!
-
-The player can also get items that unlock items, every item in doors is a single item in the multiworld, rift variants are however made into progressive items. (e.g.**Progressive Candle**, **Progressive Smoothie**, & **Progressive Jars**)
-
-The player can also unlock specific mechanics. There are currently only 3 mechanics that are items in the multiworld.
-- **The Rift** Unlocks the ability to put items in The Rift & The Golden Rift.
-- **Modifiers** Unlocks the ability to use Modifiers in runs.
-- **Pre-Run Shop** Unlocks the ability to buy items from the Pre-Run Shop. This also requires the item to be unlocked.
-- **Visions** Unlocks the ability to have visions. 
-- **Subfloor Skips** Unlocks the ability to skip to subfloors using stardust. Note that this still requires the keys for the subfloor!
+A couple of items are required for progression in the main game, these items are:
+- **Hotel Key** Required throughout The Hotel to unlock doors.
+- **Library Books** Required to get the code in the Library. (door 50)
+- **Electrical Room Switches** Required to activate the breaker in the Electrical Room. (door 100)
+- **Generator Fuses** Required throughout The Mines to activate generators.
+- **Nest Anchors** Required to activate the big generator in the middle of the Nest. (door 150)
+- **Dam Valves** Required to activate the valves in the Dam. (door 200)
+For subfloors, there are:
+- **Backdoor Key** Required throughout The Backdoor to progress.
+- **Archives Door** Required throughout The Archives to progress.
+- **Outdoors Gate** Required throughout The Outdoors to progress.
+- **Stairwell Stairs** Required throughout The Stairwell to progress.
+For visions, you require the **Visions** item, and for modifiers you require the **Modifiers** item.
 
 The player can get temporary items which can help them out in the game, before they have an item or a mechanic unlocked.
-- **Temporary Light-source** Gives you the ability to use a light-source only once. Only applies for a single item, doesn't allow you to rift it.
-- **Temporary Utility** Allows you to use any non-light emitting item in every way that doesn't obtain you an achievement. (e.g. lockpicks are allowed, but you cannot use them for The Rooms. crucifix isn't allowed because it always gets you an achievement) Starlight items count towards this item.
-- **Pre-Run Shop Voucher** Allows you to buy an item from the Pre-Run Shop without needing the Pre-Run Shop item.
+- **Temporary Items** Gives you the ability to use a certain type of item only once. Once you lose the item, you need to unlock it again.
 - **Battle Mode Pass** Allows you to bypass the Visions unlock requirement for Battle Mode only once.
 
 The player can get traps that hinder them in their journey.
@@ -48,8 +42,7 @@ The player can get traps that hinder them in their journey.
 You may disable all Secret achievements, as well as a couple of achievements that aren't secret but deserve to have the ability to be removed.
 
 There are a few special settings that may alter the gameplay in a major way.
-- **Individual Floor Keys** Experimental setting, seperates The Guiding Key into keys for individual floors. First key usually unlocks the floor (except for The Hotel), second unlocks the middle, third unlocks the end.
-- **Doorsanity** Sanity setting that adds a check for every door. Settings may remove checks to make it more fair (e.g. The Rooms having less checks, disabling A-1000)
+- **Doorsanity** Sanity setting that adds a check for every door opened, and landing entered.
 - **Deathsanity** Sanity setting that adds a check for entity death. Settings may add checks if wanted (e.g. Special Death Conditions, Multi-deaths). A list of Special Death Conditions can be found [here](https://github.com/wolfplay013/manual_doors_wolfplay/blob/main/README.md).
 - **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to intentionally die in-game. (e.g. leaving, dying to entities, etc)
 - **Filler Traps** Mixes in traps by the specified percentage, by default 15% of all filler will be replaced by traps.

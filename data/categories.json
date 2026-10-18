@@ -29,6 +29,7 @@
     
     "secret_YouFinallyTurnGreen":       {"hidden": true, "yaml_option": ["you_finally_turn_green"]},
     "secret_Doh":                       {"hidden": true, "yaml_option": ["doh"]},
+    "disable_ProGamer":                 {"hidden": true, "yaml_option": ["pro_gamer"]},
     "secret_EmancipationCustomization": {"hidden": true, "yaml_option": ["emancipation_cutomization"]},
     "secret_CrackedGamer":              {"hidden": true, "yaml_option": ["cracked_gamer"]},
     "secret_FLashPoint":                {"hidden": true, "yaml_option": ["flash_point"]},

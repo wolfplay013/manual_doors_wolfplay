@@ -36,7 +36,7 @@ import logging
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
-    valid_filler = ["Temporary Light Item", "Temporary Utility Item", "Pre-Run Shop Voucher"]
+    valid_filler = ["Temporary Light Item", "Temporary Utility Item", "Temporary Edible Item", "Temporary Magical Item", "Temporary Healing Item"]
     if multiworld.worlds[player].options.battle_mode_secrets:
         valid_filler.append("Battle Mode Pass")
     valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap", "Modifier Trap"]

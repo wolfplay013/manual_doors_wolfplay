@@ -92,7 +92,6 @@
         {"name": "Flashlight Drive",        "count":1, "progression":true, "category": ["Drive Items"]},
         {"name": "EGG Drive",               "count":1, "progression":true, "category": ["Drive Items"]},
 
-        {"name": "The Rift", 	  "count":1,"progression":true, "category": ["Mechanics"]},
         {"name": "Modifiers",     "count":1,"progression":true, "category": ["Mechanics"]},
         {"name": "Visions",       "count":1,"progression":true, "category": ["Mechanics"]},
 
@@ -103,13 +102,12 @@
         {"name": "Modifier Trap",  "count":0, "trap":true, "category": ["Traps"]},
 
         {"name": "Death Pack",				"count":10, "progression":true, "category": ["Filler", "HundredOfMany"], "_comment": "Check hook_get_filler_item_name in World.py for filler generation"},
+        {"name": "Daily Run Flame Bonus",	"count":6, "progression":true, "category": ["Filler", "UptimeFlame", "disable_DailyRuns"]},
         {"name": "Temporary Light Item",	"count":0, "filler":true, "category": ["Filler"]},
         {"name": "Temporary Utility Item",  "count":0, "filler":true, "category": ["Filler"]},
-        {"name": "Temporary Food Item",		"count":0, "filler":true, "category": ["Filler"]},
+        {"name": "Temporary Edible Item",		"count":0, "filler":true, "category": ["Filler"]},
         {"name": "Temporary Magical Item",  "count":0, "filler":true, "category": ["Filler"]},
         {"name": "Temporary Healing Item",  "count":0, "filler":true, "category": ["Filler"]},
-        {"name": "Pre-Run Shop Voucher",	"count":0, "filler":true, "category": ["Filler"]},
-        {"name": "Battle Mode Pass",	    "count":0, "filler":true, "category": ["Filler", "secret_BattleMode"]},
-        {"name": "Daily Run Flame Bonus",	"count":6, "progression":true, "category": ["Filler", "UptimeFlame", "disable_DailyRuns"]}
+        {"name": "Battle Mode Pass",	    "count":0, "filler":true, "category": ["Filler", "secret_BattleMode"]}
     ]
 }
