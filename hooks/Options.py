@@ -67,20 +67,40 @@ class achievement_HundredOfMany(Choice):
     option_disabled = 2
     default = option_with_death_item
 
-class achievement_Doh(DefaultOnToggle):
-    """D'oh! (Secret Achievement)
-    Eat a Donut."""
-    display_name = "D'oh!"
-
 class achievement_FeedTheBirds(DefaultOnToggle):
     """Feed the Birds (Secret Achievement)
     Feed a Caw Bread!"""
     display_name = "Feed The Birds"
 
-class achievement_YouFinallyTurnGreen(DefaultOnToggle):
-    """You Finally Turn Green (Secret Achievement)
-    Drink a Gween Soda and finally turn green."""
-    display_name = "You Finally Turn Green"
+class achievement_REDACTED(DefaultOnToggle):
+    """REDACTED (Secret Achievement)
+    Watch, and create a new entity."""
+    display_name = "REDACTED"
+
+class achievement_Patience(DefaultOnToggle):
+    """Patience (Secret Achievement)
+    Walk through the entire queue line in the Archives."""
+    display_name = "Patience"
+
+class achievement_MissionSuccessful(DefaultOnToggle):
+    """Mission Successful (Secret Achievement)
+    Flush a Toilet, turn on a Sink, and use an Air Dryer in succession."""
+    display_name = "Mission Successful"
+
+class achievement_DustToDust(DefaultOnToggle):
+    """Dust To Dust (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Dust To Dust"
+
+class achievement_GarageSale(DefaultOnToggle):
+    """Garage Sale (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Garage Sale"
+
+class achievement_ClayWorld(DefaultOnToggle):
+    """Clay World (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Clay World"
 
 class achievement_HelpingHand(DefaultOnToggle):
     """Helping Hand (Multiplayer Achievement)
@@ -95,6 +115,7 @@ class achievement_ItStaresBack(DefaultOnToggle):
 class achievement_MeetTimothy(DefaultOnToggle):
     """Meet Timothy (Secret Achievement)
     Encounter Timothy while looting."""
+    display_name = "Meet Timothy"
 
 class achievement_Error(DefaultOnToggle):
     """Error (Secret Achievement / Multiplayer Achievement / Rare Achievement)
@@ -111,6 +132,36 @@ class achievement_TrialAndError(DefaultOnToggle):
     Encounter and survive an activated Glitch Fragment."""
     display_name = "Trial And Error"
 
+class achievement_WhoAmI(DefaultOnToggle):
+    """Who Am I? (Secret Achievement)
+    Try to remember."""
+    display_name = "Who Am I?"
+
+class achievement_CongaLine(DefaultOnToggle):
+    """Conga Line (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Conga Line"
+
+class achievement_FriendBall(DefaultOnToggle):
+    """Friend Ball (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Friend Ball"
+
+class achievement_Doh(DefaultOnToggle):
+    """D'oh! (Secret Achievement)
+    Eat a Donut."""
+    display_name = "D'oh!"
+
+class achievement_ProGamer(DefaultOnToggle):
+    """Pro Gamer (New Achievement)
+    no spoilers :)"""
+    display_name = "D'oh!"
+
+class achievement_YouFinallyTurnGreen(DefaultOnToggle):
+    """You Finally Turn Green (Secret Achievement)
+    Drink a Gween Soda and finally turn green."""
+    display_name = "You Finally Turn Green"
+
 class achievement_SecretCrucifix(DefaultOnToggle):
     """Every secret Crucifix achievement. (Secret Achievement)
     Use a crucifix against every entity except for Rush, Ambush, Figure, & Seek."""
@@ -125,11 +176,6 @@ class achievement_AHardPlace(DefaultOnToggle):
     """A Hard Place (Difficult Achievement)
     Escape The Mines with at least a 150% bonus using Modifiers."""
     display_name = "A Hard Place"
-
-class achievement_A1000(DefaultOnToggle):
-    """A-1000 (Secret Achievement / Long Achievement)
-    Reach the end of The Rooms."""
-    display_name = "A-1000"
 
 class achievement_BattleModeSecret(DefaultOnToggle):
     """Battle Mode Achievements (Secret Achievement)
