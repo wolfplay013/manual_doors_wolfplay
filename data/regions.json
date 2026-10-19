@@ -23,6 +23,6 @@
 	"The Stairwell 0": {"connects_to": ["The Stairwell 1", "Subfloor Prog"], "requires": "|Skeleton Key|"},
 	"The Stairwell 1": {"connects_to": [], 									 "requires": "|Stairwell Stairs|"},
 
-	"The Backdoor 0": {"connects_to": ["Subfloor Prog"], "requires": ""},
+	"The Backdoor 0": {"connects_to": ["The Backdoor 1", "Subfloor Prog"], "requires": ""},
 	"The Backdoor 1": {"connects_to": [], "requires": "|Backdoor Key|"}
 }

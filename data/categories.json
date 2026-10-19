@@ -15,6 +15,7 @@
     "secret_Patience":             {"hidden": true, "yaml_option": ["patience"]},
     "secret_MissionSuccessful":    {"hidden": true, "yaml_option": ["mission_successful"]},
     "secret_DustToDust":           {"hidden": true, "yaml_option": ["dust_to_dust"]},
+    "secret_GarageSale":           {"hidden": true, "yaml_option": ["garage_sale"]},
     "secret_ClayWorld":            {"hidden": true, "yaml_option": ["clay_world"]},
 
     "multiplayer_HelpingHand":     {"hidden": true, "yaml_option": ["helping_hand"]},
@@ -32,7 +33,7 @@
     "disable_ProGamer":                 {"hidden": true, "yaml_option": ["pro_gamer"]},
     "secret_EmancipationCustomization": {"hidden": true, "yaml_option": ["emancipation_customization"]},
     "secret_CrackedGamer":              {"hidden": true, "yaml_option": ["cracked_gamer"]},
-    "secret_FLashPoint":                {"hidden": true, "yaml_option": ["flash_point"]},
+    "secret_FlashPoint":                {"hidden": true, "yaml_option": ["flash_point"]},
 
     "IndividualCrucifix":       {"hidden": true, "yaml_option": ["all_crucifix"]},
     "secret_CharlesDrowned":    {"hidden": true, "yaml_option": ["charles_drowned"]},
@@ -50,6 +51,8 @@
     "disable_Uptime":              {"hidden": true, "yaml_option": ["uptime"]},
     "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
     "disable_ChaosMode":           {"hidden": true, "yaml_option": ["chaos_mode"]},
+
+    "EnablePyro": { "hidden": true, "yaml_option": ["enable_pyro"]},
 
     "FloorKeys":            {"hidden": true},
     "Items":                {"hidden": true},
@@ -71,6 +74,13 @@
     "single_subdeath": {"hidden": true},
     "multi_subdeath": {"hidden": true},
     "subdeath_no_2": {"hidden": true},
-    "subdeath_no_3": {"hidden": true}
+    "subdeath_no_3": {"hidden": true},
+
+    "CandleUpgrade": {"hidden": true},
+    "JarUpgrade": {"hidden": true},
+    "SmoothieUpgrade": {"hidden": true},
+    "HotelKeys": {"hidden": true},
+    "MinesKeys": {"hidden": true},
+    "Subfloor Items": {"hidden": true}
 }
 
