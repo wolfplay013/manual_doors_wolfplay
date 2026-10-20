@@ -287,14 +287,14 @@ class option_DeathsanityMainDuplicates(Range):
     range_start = 1
     range_end = 3
     default = 1
-    display_name = "Doorsanity - Duplicate Deaths"
+    display_name = "Deathsanity - Duplicate Deaths"
 
 class option_DeathsanitySubDuplicates(Range):
     """Adds multiple checks per death in the subfloors for Deathsanity. Glitched entites are considered as subfloor entities."""
     range_start = 1
     range_end = 3
     default = 1
-    display_name = "Doorsanity - Duplicate Subfloor Deaths"
+    display_name = "Deathsanity - Duplicate Subfloor Deaths"
 
 class option_DeathsanityGlitch(Choice):
     """Adds glitched entities to the list of deaths. See below for options.
@@ -307,12 +307,12 @@ class option_DeathsanityGlitch(Choice):
     option_simple = 2
     option_disabled = 3
     default = option_default
-    display_name = "Doorsanity - Glitched Entities"
+    display_name = "Deathsanity - Glitched Entities"
 
 class option_DeathsanitySpecial(Toggle):
     """Adds special death conditions based on death messages to the list of deaths.
     Check the guide for more information."""
-    display_name = "Doorsanity - Special Deaths"
+    display_name = "Deathsanity - Special Deaths"
 
 class FillerTrapPercent(Range):
     """How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps."""
