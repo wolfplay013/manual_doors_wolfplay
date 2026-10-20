@@ -48,7 +48,7 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "M
     if "Doorsanity - The Outdoors" in location["category"]:
         if options.outdoors_doorsanity != "distance_checks" and "outdoors_distance" in location["category"]:
             return False
-        elif options.archives_doorsanity != "door_checks" and "outdoors_doors" in location["category"]:
+        elif options.outdoors_doorsanity != "door_checks" and "outdoors_doors" in location["category"]:
             return False
 
             
