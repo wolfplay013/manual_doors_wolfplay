@@ -26,6 +26,14 @@ from typing import Type, Any
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
+class option_StartingFloor(Choice):
+    """Choose to start out with a certain floor, currently only supports main floors. Random chooses a floor at random."""
+    display_name = "Starting Floor"
+    option_the_hotel = 1
+    option_the_mines = 2
+    option_random_floor = 0
+    default = option_the_hotel
+
 class achievement_BuddySystem(DefaultOnToggle):
     """Buddy System (Multiplayer Achievement)
     Play a run with a friend."""
@@ -322,6 +330,8 @@ class FillerTrapPercent(Range):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["starting_floor"] = option_StartingFloor
+
     options["buddy_system"] = achievement_BuddySystem
     options["group_member"] = achievement_GroupMember
     options["back_from_the_dead"] = achievement_BackFromTheDead

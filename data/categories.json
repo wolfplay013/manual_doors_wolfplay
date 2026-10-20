@@ -81,6 +81,9 @@
     "SmoothieUpgrade": {"hidden": true},
     "HotelKeys": {"hidden": true},
     "MinesKeys": {"hidden": true},
-    "Subfloor Items": {"hidden": true}
+    "Subfloor Items": {"hidden": true},
+    "starterItems_0": {"hidden": true},
+    "starterItems_1": {"hidden": true},
+    "starterItems_2": {"hidden": true}
 }
 

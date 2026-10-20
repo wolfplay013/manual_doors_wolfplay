@@ -1,11 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.items.schema.json",
     "data": [
-        {"name": "Hotel Key", "count":1, "progression":true, "category": ["Essential & Key Items", "HotelKeys"]},
+        {"name": "Hotel Key", "count":1, "progression":true, "category": ["Essential & Key Items", "HotelKeys", "starterItems_0", "starterItems_1"]},
         {"name": "Library Books", "count":1, "progression":true, "category": ["Essential & Key Items", "HotelKeys"]},
         {"name": "Electrical Room Switches", "count":1, "progression":true, "category": ["Essential & Key Items", "HotelKeys"]},
 
-        {"name": "Generator Fuses", "count":1, "progression":true, "category": ["Essential & Key Items", "MinesKeys"]},
+        {"name": "Generator Fuses", "count":1, "progression":true, "category": ["Essential & Key Items", "MinesKeys", "starterItems_0", "starterItems_2"]},
         {"name": "Nest Anchors", "count":1, "progression":true, "category": ["Essential & Key Items", "MinesKeys"]},
         {"name": "Dam Valves", "count":1, "progression":true, "category": ["Essential & Key Items", "MinesKeys"]},
 
