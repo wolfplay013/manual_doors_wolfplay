@@ -20,12 +20,10 @@ def after_load_location_file(location_table: list) -> list:
 
     # The Hotel (100 Doors)
     while temporary_count != 101:
-        if temporary_count < 50:
+        if temporary_count < 51:
             doorsanity_region = "The Hotel 0"
-        elif 50 <= temporary_count < 100:
-            doorsanity_region = "The Hotel 1"
         else:
-            doorsanity_region = "The Hotel 2"
+            doorsanity_region = "The Hotel 1"
         door_sanity.append({
                 'name': f'Door {"%04d" % temporary_count} - The Hotel',
                 'region': doorsanity_region,
@@ -35,12 +33,10 @@ def after_load_location_file(location_table: list) -> list:
 
     # The Mines (100 Doors)
     while temporary_count != 201:
-        if temporary_count < 142:
+        if temporary_count < 151:
             doorsanity_region = "The Mines 0"
-        elif 142 <= temporary_count < 200:
-            doorsanity_region = "The Mines 1"
         else:
-            doorsanity_region = "The Mines 2"
+            doorsanity_region = "The Mines 1"
         door_sanity.append({
                 'name': f'Door {"%04d" % temporary_count} - The Mines',
                 'region': doorsanity_region,
