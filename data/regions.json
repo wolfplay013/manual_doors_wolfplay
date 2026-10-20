@@ -9,8 +9,8 @@
 	"The Mines 1": 	{"connects_to": ["The Mines 2", "The Stairwell 0"], 				"requires": "|Nest Anchors|"},
 	"The Mines 2": 	{"connects_to": [], 			 								"requires": "|Dam Valves|"},
 
-	"Floor Prog 0": {"connects_to": ["Floor Prog 1", "The Hotel 1", "The Mines 1"], "requirses": "|Hotel Key| OR |Generator Fuses|"},
-	"Floor Prog 1": {"connects_to": ["Floor Prog 2", "The Hotel 2", "The Mines 2"], "requires": "|Library Books| OR |Nest Anchors|"},
+	"Floor Prog 0": {"connects_to": ["Floor Prog 1"], "requirses": "|Hotel Key| OR |Generator Fuses|"},
+	"Floor Prog 1": {"connects_to": ["Floor Prog 2"], "requires": "|Library Books| OR |Nest Anchors|"},
 	"Floor Prog 2": {"connects_to": [], "requires": "|Electrical Room Switches| OR |Dam Valves|"},
 	"Subfloor Prog":{"connects_to": ["The Backdoor 0"], "requires": ""},
 

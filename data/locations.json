@@ -164,7 +164,7 @@
         {"name": "Escape the Hotel at 150% Modifiers",  "region": "The Hotel 2", "category": ["Goal"], "requires": "|Modifiers|", "victory":true},
         {"name": "Escape the Hotel with Chaos Mode",    "region": "The Hotel 2", "category": ["Goal"], "requires": "|Modifiers| AND |Visions|", "victory":true},
 
-        {"name": "Escape the Mines",                    "region": "The Hotel 2", "category": ["Goal"], "requires": "", "victory":true},
+        {"name": "Escape the Mines",                    "region": "The Mines 2", "category": ["Goal"], "requires": "", "victory":true},
         {"name": "Escape the Mines at 50% Modifiers",   "region": "The Mines 2", "category": ["Goal"], "requires": "|Modifiers|", "victory":true},
         {"name": "Escape the Mines at 100% Modifiers",  "region": "The Mines 2", "category": ["Goal"], "requires": "|Modifiers|", "victory":true},
         {"name": "Escape the Mines at 150% Modifiers",  "region": "The Mines 2", "category": ["Goal"], "requires": "|Modifiers|", "victory":true},
