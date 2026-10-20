@@ -52,8 +52,6 @@
     "disable_DailyRuns":           {"hidden": true, "yaml_option": ["daily_runs"]},
     "disable_ChaosMode":           {"hidden": true, "yaml_option": ["chaos_mode"]},
 
-    "EnablePyro": { "hidden": true, "yaml_option": ["enable_pyro"]},
-
     "FloorKeys":            {"hidden": true},
     "Items":                {"hidden": true},
     "doorsanity":           {"hidden": true},
