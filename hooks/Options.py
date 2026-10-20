@@ -280,7 +280,7 @@ class option_Deathsanity(Toggle):
     Gives a check for every death you obtain. Not recommended to enable with Deathlink on.
     Includes every single thing you can die to.
     Includes 26 checks by default, however this can be expanded with the following options."""
-    display_name = "Doorsanity"
+    display_name = "Deathsanity"
 
 class option_DeathsanityMainDuplicates(Range):
     """Adds multiple checks per death in the main floors for Deathsanity. Doesn't apply to special deaths, or subfloor deaths in the list."""
