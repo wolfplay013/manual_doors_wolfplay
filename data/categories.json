@@ -82,6 +82,10 @@
     "Subfloor Items": {"hidden": true},
     "starterItems_0": {"hidden": true},
     "starterItems_1": {"hidden": true},
-    "starterItems_2": {"hidden": true}
+    "starterItems_2": {"hidden": true},
+    "archives_allsectors": {"hidden": true},
+    "archives_short": {"hidden": true},
+    "outdoors_distance": {"hidden": true},
+    "outdoors_doors": {"hidden": true}
 }
 
