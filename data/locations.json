@@ -20,7 +20,7 @@
         {"name": "Welcome Back", 			"region": "The Lobby", 	"category": [ "Achievements - General", "secret_WelcomeBack" ], "requires": ""},
         {"name": "Betrayal", 				"region": "Floor Prog 0","category": [ "Achievements - General", "secret_Betrayal" ], "requires": ""},
         {"name": "Ten Of Many", 			"region": "Floor Prog 0",  "category": [ "Achievements - General", "secret_TenOfMany" ], "requires": ""},
-        {"name": "Hundred Of Many", 		"region": "Subfloor Prog", 	"category": [ "Achievements - General", "secret_HundredOfMany" ], "requires": "|Modifiers| AND |Death Pack:9|"},
+        {"name": "Hundred Of Many", 		"region": "Subfloor Prog", 	"category": [ "Achievements - General", "secret_HundredOfMany" ], "requires": "|Modifiers| AND (|Death Pack:9| OR {YamlCompare(hundred_of_many != with_death_item)})"},
         {"name": "Feed The Birds", 	        "region": "The Outdoors 1","category":[ "Achievements - General", "secret_FeedTheBirds" ], "requires": "|Generator Fuses| AND |Nest Anchors| AND (|Dam Valves| OR |Skeleton Key|) AND |Bread|"},
         {"name": "Unpatched Dupe Glitch", 	"region": "The Archives 1","category": [ "Achievements - General" ], "requires": ""},
         {"name": "Quick Purchase", 	        "region": "The Archives 1","category": [ "Achievements - General" ], "requires": "|Shakelight|"},

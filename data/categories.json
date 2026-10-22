@@ -9,7 +9,7 @@
     "secret_WelcomeBack":          {"hidden": true, "yaml_option": ["welcome_back"]},
     "secret_Betrayal":             {"hidden": true, "yaml_option": ["betrayal"]},
     "secret_TenOfMany":            {"hidden": true, "yaml_option": ["ten_of_many"]},
-    "secret_HundredOfMany":        {"hidden": true, "yaml_option": ["hundred_of_many"]},
+    "secret_HundredOfMany":        {"hidden": true},
     "secret_FeedTheBirds":         {"hidden": true, "yaml_option": ["feed_the_birds"]},
     "secret_REDACTED":             {"hidden": true, "yaml_option": ["redacted"]},
     "secret_Patience":             {"hidden": true, "yaml_option": ["patience"]},

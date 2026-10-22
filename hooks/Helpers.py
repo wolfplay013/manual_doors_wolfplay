@@ -35,6 +35,10 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item: "ManualIte
 def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "ManualLocation") -> Optional[bool]:
     options = multiworld.worlds[player].options
 
+    if "secret_HundredOfMany" in location["category"]:
+        if options.hundred_of_many == "disabled":
+            return False
+
     if not options.doorsanity:
         if "doorsanity" in location["category"]:
             return False
