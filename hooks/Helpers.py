@@ -39,6 +39,10 @@ def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "M
         if options.hundred_of_many == "disabled":
             return False
 
+    if "disable_Uptime" in location["category"]:
+        if options.uptime == "disabled":
+            return False
+
     if not options.doorsanity:
         if "doorsanity" in location["category"]:
             return False

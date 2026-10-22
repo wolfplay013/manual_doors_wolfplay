@@ -155,7 +155,7 @@
         {"name": "PARALLEL PROCESSING",     "region": "The Lobby",  "category": [ "Achievements - Visions", "disable_DailyRuns", "disable_ParallelProcessing"], "requires": "|Visions|"},
         {"name": "LOW LATENCY",             "region": "The Lobby",  "category": [ "Achievements - Visions", "disable_DailyRuns"], "requires": "|Visions|"},
         {"name": "CLEAN RUN",               "region": "The Lobby",  "category": [ "Achievements - Visions", "disable_DailyRuns", "disable_CleanRun"], "requires": "|Visions|"},
-        {"name": "UPTIME",                  "region": "The Lobby",  "category": [ "Achievements - Visions", "disable_DailyRuns", "disable_Uptime"], "requires": "|Visions| AND |Daily Run Flame Bonus:6|"},
+        {"name": "UPTIME",                  "region": "The Lobby",  "category": [ "Achievements - Visions", "disable_DailyRuns", "disable_Uptime"], "requires": "|Visions| AND (|Daily Run Flame Bonus:6| OR {YamlCompare(uptime != with_flame_item)})"},
         {"name": "Everything Everywhere All At Once","region": "The Hotel 2",  "category": [ "Achievements - Visions", "disable_ChaosMode" ], "requires": "|Visions| AND |Modifiers|"},
 
         {"name": "Escape the Hotel",                    "region": "The Hotel 2", "category": ["Goal"], "requires": "", "victory":true},
