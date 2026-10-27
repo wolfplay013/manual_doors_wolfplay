@@ -24,10 +24,11 @@ For subfloors, there are:
 - **Archives Door** Required throughout The Archives to progress.
 - **Outdoors Gate** Required throughout The Outdoors to progress.
 - **Stairwell Stairs** Required throughout The Stairwell to progress.
+
 For visions, you require the **Visions** item, and for modifiers you require the **Modifiers** item.
 
 The player can get temporary items which can help them out in the game, before they have an item or a mechanic unlocked.
-- **Temporary Items** Gives you the ability to use a certain type of item only once. Once you lose the item, you need to unlock it again.
+- **Temporary Items** Gives you the ability to use a certain type of item only once. Once you lose the item, you also lose access to it.
 - **Battle Mode Pass** Allows you to bypass the Visions unlock requirement for Battle Mode only once.
 
 The player can get traps that hinder them in their journey.
@@ -42,6 +43,7 @@ The player can get traps that hinder them in their journey.
 You may disable all Secret achievements, as well as a couple of achievements that aren't secret but deserve to have the ability to be removed.
 
 There are a few special settings that may alter the gameplay in a major way.
+- **Starting Floor** Option that changes if you start out with a Hotel Key or a Generator Fuse. Can be randomized, currently doesn't support subfloors.
 - **Doorsanity** Sanity setting that adds a check for every door opened, and landing entered.
 - **Deathsanity** Sanity setting that adds a check for entity death. Settings may add checks if wanted (e.g. Special Death Conditions, Multi-deaths). A list of Special Death Conditions can be found [here](https://github.com/wolfplay013/manual_doors_wolfplay/blob/main/README.md).
 - **Death Link** Enables death link between every world with it enabled, note that since this is a manual, you have to intentionally die in-game. (e.g. leaving, dying to entities, etc)
