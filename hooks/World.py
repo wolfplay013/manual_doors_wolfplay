@@ -36,7 +36,7 @@ import logging
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
 
-    valid_filler = ["Temporary Light-source", "Temporary Utility", "Pre-Run Shop Voucher"]
+    valid_filler = ["Temporary Light Item", "Temporary Utility Item", "Temporary Edible Item", "Temporary Magical Item", "Temporary Healing Item"]
     if multiworld.worlds[player].options.battle_mode_secrets:
         valid_filler.append("Battle Mode Pass")
     valid_traps = ["Damage Trap", "Freeze Trap", "Butterfingers Trap", "In Plain Sight Trap", "Modifier Trap"]
@@ -88,23 +88,59 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    return item_pool
-
-# The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
+    return item_pool## cessed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # Use this hook to remove items from the item pool
     itemNamesToRemove: list[str] = [] # List of item names
-    if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
-        itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
+    # if is_option_enabled(multiworld, player, "individual_floor_keys") == True:
+    #     itemNamesToRemove = ["The Guiding Key", "The Guiding Key", "The Guiding Key", "The Guiding Key", "The Curious Key", "The Curious Key"] # List of item names
+    for itemName in itemNamesToRemove:
+        item = next(i for i in item_pool if i.name == itemName)
+        item_pool.remove(item)
+
+    # straight up took this code from the example manual, thank you lots to fuzzy!
+    starting_floor = world.options.starting_floor.value
+
+    print(f"starterItems_{starting_floor}")
+    starting_items = [{
+        "item_categories": [f"starterItems_{starting_floor}"],
+        "random": 1
+    }]
+
+    for starting in starting_items:
+        # get all items that have at least the category or categories we want
+        possible_item_names = []
+        
+        for category in starting['item_categories']:
+            possible_item_names.extend(
+                # spacing out the list comprehension here maybe makes it easier to follow
+                [
+                    name for name, i in world.item_name_to_item.items()
+                        if category in i.get("category", []) # .get() accounts for the key not existing and provides a default if it doesn't
+                ]
+            )
+        
+        # remove any duplicate names from the list of possible items
+        possible_item_names = set(possible_item_names)
+
+        # we add the list of items that have this specific category to our possible items
+        possible_items = [
+            i for i in item_pool 
+                if i.name in possible_item_names
+        ]
+        
+        # pick a random possible item(s) to start with, then precollect them and,
+        #   since we just took them, remove them from the item pool
+        for _ in range(starting['random']): # loops from 0 to starting['random'] - 1
+            random_starting_item = world.random.choice(possible_items)
+            multiworld.push_precollected(random_starting_item)
+            possible_items.remove(random_starting_item) # don't allow choosing the exact same item again
+            item_pool.remove(random_starting_item) # remove it from the pool since we're starting with it
 
     # Add your code here to calculate which items to remove.
     #
     # Because multiple copies of an item can exist, you need to add an item name
     # to the list multiple times if you want to remove multiple copies of it.
-
-    for itemName in itemNamesToRemove:
-        item = next(i for i in item_pool if i.name == itemName)
-        item_pool.remove(item)
 
     return item_pool
 

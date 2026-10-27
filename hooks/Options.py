@@ -26,6 +26,14 @@ from typing import Type, Any
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
+class option_StartingFloor(Choice):
+    """Choose to start out with a certain floor, currently only supports main floors. Random chooses a floor at random."""
+    display_name = "Starting Floor"
+    option_the_hotel = 1
+    option_the_mines = 2
+    option_random_floor = 0
+    default = option_the_hotel
+
 class achievement_BuddySystem(DefaultOnToggle):
     """Buddy System (Multiplayer Achievement)
     Play a run with a friend."""
@@ -43,7 +51,7 @@ class achievement_BackFromTheDead(DefaultOnToggle):
 
 
 class achievement_WelcomeBack(DefaultOnToggle):
-    """Welcome Back (Secret Achievement)
+    """Welcome Back (Secret Achievement / Async Achievement)
     Join another day."""
     display_name = "Welcome Back"
 
@@ -67,20 +75,40 @@ class achievement_HundredOfMany(Choice):
     option_disabled = 2
     default = option_with_death_item
 
-class achievement_Doh(DefaultOnToggle):
-    """D'oh! (Secret Achievement)
-    Eat a Donut."""
-    display_name = "D'oh!"
-
 class achievement_FeedTheBirds(DefaultOnToggle):
     """Feed the Birds (Secret Achievement)
     Feed a Caw Bread!"""
     display_name = "Feed The Birds"
 
-class achievement_YouFinallyTurnGreen(DefaultOnToggle):
-    """You Finally Turn Green (Secret Achievement)
-    Drink a Gween Soda and finally turn green."""
-    display_name = "You Finally Turn Green"
+class achievement_REDACTED(DefaultOnToggle):
+    """REDACTED (Secret Achievement)
+    Watch, and create a new entity."""
+    display_name = "REDACTED"
+
+class achievement_Patience(DefaultOnToggle):
+    """Patience (Secret Achievement)
+    Walk through the entire queue line in the Archives."""
+    display_name = "Patience"
+
+class achievement_MissionSuccessful(DefaultOnToggle):
+    """Mission Successful (Secret Achievement)
+    Flush a Toilet, turn on a Sink, and use an Air Dryer in succession."""
+    display_name = "Mission Successful"
+
+class achievement_DustToDust(DefaultOnToggle):
+    """Dust To Dust (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Dust To Dust"
+
+class achievement_GarageSale(DefaultOnToggle):
+    """Garage Sale (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Garage Sale"
+
+class achievement_ClayWorld(DefaultOnToggle):
+    """Clay World (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Clay World"
 
 class achievement_HelpingHand(DefaultOnToggle):
     """Helping Hand (Multiplayer Achievement)
@@ -95,10 +123,11 @@ class achievement_ItStaresBack(DefaultOnToggle):
 class achievement_MeetTimothy(DefaultOnToggle):
     """Meet Timothy (Secret Achievement)
     Encounter Timothy while looting."""
+    display_name = "Meet Timothy"
 
 class achievement_Error(DefaultOnToggle):
     """Error (Secret Achievement / Multiplayer Achievement / Rare Achievement)
-    Enounter the Glitch."""
+    Encounter the Glitch."""
     display_name = "Error"
 
 class achievement_MeetJack(DefaultOnToggle):
@@ -111,10 +140,60 @@ class achievement_TrialAndError(DefaultOnToggle):
     Encounter and survive an activated Glitch Fragment."""
     display_name = "Trial And Error"
 
+class achievement_WhoAmI(DefaultOnToggle):
+    """Who Am I? (Secret Achievement)
+    Try to remember."""
+    display_name = "Who Am I?"
+
+class achievement_CongaLine(DefaultOnToggle):
+    """Conga Line (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Conga Line"
+
+class achievement_FriendBall(DefaultOnToggle):
+    """Friend Ball (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Friend Ball"
+
+class achievement_Doh(DefaultOnToggle):
+    """D'oh! (Secret Achievement)
+    Eat a Donut."""
+    display_name = "D'oh!"
+
+class achievement_YouFinallyTurnGreen(DefaultOnToggle):
+    """You Finally Turn Green (Secret Achievement)
+    Drink a Gween Soda and finally turn green."""
+    display_name = "You Finally Turn Green"
+
+class achievement_ProGamer(DefaultOnToggle):
+    """Pro Gamer (New Achievement)
+    no spoilers :)"""
+    display_name = "Pro Gamer"
+
+class achievement_EmancipationCustomization(DefaultOnToggle):
+    """Emancipation Customization (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Emancipation Customization"
+
+class achievement_CrackedGamer(DefaultOnToggle):
+    """Cracked Gamer (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Cracked Gamer"
+
+class achievement_FlashPoint(DefaultOnToggle):
+    """Flash Point (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Flash Point"
+
 class achievement_SecretCrucifix(DefaultOnToggle):
     """Every secret Crucifix achievement. (Secret Achievement)
-    Use a crucifix against every entity except for Rush, Ambush, Figure, & Seek."""
+    Use a crucifix against every entity except for Rush, Ambush, Figure, Seek, & Portrait."""
     display_name = "All Entity Crucifix Achievements"
+
+class achievement_CharlesDrowned(DefaultOnToggle):
+    """Charles Drowned (Secret Achievement)
+    no spoilers :)"""
+    display_name = "Charles Drowned"
 
 class achievement_HotelHell(DefaultOnToggle):
     """Hotel Hell (Difficult Achievement)
@@ -126,13 +205,18 @@ class achievement_AHardPlace(DefaultOnToggle):
     Escape The Mines with at least a 150% bonus using Modifiers."""
     display_name = "A Hard Place"
 
-class achievement_A1000(DefaultOnToggle):
-    """A-1000 (Secret Achievement / Long Achievement)
-    Reach the end of The Rooms."""
-    display_name = "A-1000"
+class achievement_StarEmployee(DefaultOnToggle):
+    """Star Employee (Difficult Achievement)
+    Successfully organize the Mail Room, after giving Honcho something it shouldn't have."""
+    display_name = "Star Employee"
+
+class achievement_StorageWars(DefaultOnToggle):
+    """Storage Wars (Secret Achievement)
+    Bargain 3000 Gold from the hooded figure in The Stairwell."""
+    display_name = "Storage Wars"
 
 class achievement_BattleModeSecret(DefaultOnToggle):
-    """Secret Battle Mode Achievements (Secret Achievement)
+    """Battle Mode Achievements (Secret Achievement)
     Enables all Battle Mode-exclusive items and achievements, excluding Hard Achievements."""
     display_name = "Battle Mode Secret Achievements"
 
@@ -156,11 +240,6 @@ class achievement_CleanRun(DefaultOnToggle):
     Win any Daily Run on your first attempt."""
     display_name = "CLEAN RUN"
 
-class achievement_Uptime(DefaultOnToggle):
-    """UPTIME (Async Achievement)
-    Keep up a Daily Streak for 7 days."""
-    display_name = "UPTIME"
-
 class achievement_Uptime(Choice):
     """UPTIME (Async Achievement)
     Keep up a Daily Streak for 7 days.
@@ -174,53 +253,56 @@ class achievement_Uptime(Choice):
 class achievement_ChaosMode(DefaultOnToggle):
     """Everything Everywhere All At Once (Secret Achievement / Hard Achievement)
     Successfully escape The Hotel in the CHAOS Vision. If using livestream integration, requires at least 5 viewers."""
-    display_name = "UPTIME"
-
-class option_IndividualFloorKeys(Toggle):
-    """Individual Floor Keys
-    Experimental option, changes the progression of the game in a way where you can access The Mines before The Hotel.
-    Every floor exceept for subfloors get 3 keys, with the exception of The Hotel which skips the first key.
-    Key #1 unlocks the floor itself, Key #2 unlocks the midway point, Key #3 unlocks the last door."""
-    display_name = "Individual Floor Keys"
+    display_name = "Everything Everywhere All At Once"
 
 class option_Doorsanity(Toggle):
     """Doorsanity
-    Gives a check for every door that you open up.
-    Includes 450 checks by default, however this can be modified to be lower or higher through settings.
-    Disabling Floor 2 will disable all 100 checks for that floor."""
+    Gives a check for every door that you open up. (also includes landings in the stairwell)
+    Includes 684 checks by default, however this can be modified to be lower or higher through settings."""
     display_name = "Doorsanity"
 
-class option_DoorSanityRoomsType(Choice):
-    """The Rooms can be customised to be less severe. Disabling the A-1000 achievement can also make this shorter.
-        all_checks: Adds all checks possible, 1 check per 1 door. Stops at 200 checks if the A-1000 achievement is disabled.
-        limited_checks: Limits the amount of checks so that it's more fair, 1 check per 5 doors. Stops at 40 checks if the A-1000 achievement is disabled.
-        no_check: Disables all checks in The Rooms subfloor."""
-    display_name = "Doorsanity - The Rooms Checks"
+class option_DoorSanityArchivesType(Choice):
+    """The Archives can be customized to be less severe.
+        all_checks: Adds all checks in each sector.
+        300_checks: Gives you 300 doors to go through in total, no matter the sector.
+        no_checks: Disables all checks in The Archives subfloor."""
+    display_name = "Doorsanity - The Archives Checks"
     option_all_checks = 0
-    option_limited = 1
+    option_300_checks = 1
     option_no_checks = 2
-    default = option_limited
+    default = option_300_checks
+
+class option_DoorSanityOutdoorsType(Choice):
+    """The Outdoors can be customized to give checks on different factors.
+        distance_checks: Adds a check for every 60 meters in the outdoors, up until 35 checks.
+        door_checks: Adds a check for every door in the outdoors. Caution with this option, as there's no door numbers in the outdoors!
+        no_checks: Disables all checks in The Outdoors subfloor."""
+    display_name = "Doorsanity - The Outdoors Checks"
+    option_distance_checks = 0
+    option_door_checks = 1
+    option_no_checks = 2
+    default = option_door_checks
 
 class option_Deathsanity(Toggle):
-    """Deathsanity
+    """Deathsanity (⚠ Currently outdated, doesn't include any of the new entities.)
     Gives a check for every death you obtain. Not recommended to enable with Deathlink on.
     Includes every single thing you can die to.
     Includes 26 checks by default, however this can be expanded with the following options."""
-    display_name = "Doorsanity"
+    display_name = "Deathsanity"
 
 class option_DeathsanityMainDuplicates(Range):
     """Adds multiple checks per death in the main floors for Deathsanity. Doesn't apply to special deaths, or subfloor deaths in the list."""
     range_start = 1
     range_end = 3
     default = 1
-    display_name = "Doorsanity - Duplicate Deaths"
+    display_name = "Deathsanity - Duplicate Deaths"
 
 class option_DeathsanitySubDuplicates(Range):
     """Adds multiple checks per death in the subfloors for Deathsanity. Glitched entites are considered as subfloor entities."""
     range_start = 1
     range_end = 3
     default = 1
-    display_name = "Doorsanity - Duplicate Subfloor Deaths"
+    display_name = "Deathsanity - Duplicate Subfloor Deaths"
 
 class option_DeathsanityGlitch(Choice):
     """Adds glitched entities to the list of deaths. See below for options.
@@ -233,12 +315,12 @@ class option_DeathsanityGlitch(Choice):
     option_simple = 2
     option_disabled = 3
     default = option_default
-    display_name = "Doorsanity - Glitched Entities"
+    display_name = "Deathsanity - Glitched Entities"
 
 class option_DeathsanitySpecial(Toggle):
     """Adds special death conditions based on death messages to the list of deaths.
     Check the guide for more information."""
-    display_name = "Doorsanity - Special Deaths"
+    display_name = "Deathsanity - Special Deaths"
 
 class FillerTrapPercent(Range):
     """How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps."""
@@ -248,6 +330,8 @@ class FillerTrapPercent(Range):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["starting_floor"] = option_StartingFloor
+
     options["buddy_system"] = achievement_BuddySystem
     options["group_member"] = achievement_GroupMember
     options["back_from_the_dead"] = achievement_BackFromTheDead
@@ -255,18 +339,39 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["betrayal"] = achievement_Betrayal
     options["ten_of_many"] = achievement_TenOfMany
     options["hundred_of_many"] = achievement_HundredOfMany
-    options["doh"] = achievement_Doh
     options["feed_the_birds"] = achievement_FeedTheBirds
-    options["you_finally_turn_green"] = achievement_YouFinallyTurnGreen
+    options["redacted"] = achievement_REDACTED
+    options["patience"] = achievement_Patience
+    options["mission_successful"] = achievement_MissionSuccessful
+    options["dust_to_dust"] = achievement_DustToDust
+    options["garage_sale"] = achievement_GarageSale
+    options["clay_world"] = achievement_ClayWorld
+
     options["helping_hand"] = achievement_HelpingHand
     options["it_stares_back"] = achievement_ItStaresBack
     options["meet_timothy"] = achievement_MeetTimothy
     options["error"] = achievement_Error
     options["meet_jack"] = achievement_MeetJack
     options["trial_and_error"] = achievement_TrialAndError
-    options["a_1000"] = achievement_A1000
+    options["who_am_i"] = achievement_WhoAmI
+    options["conga_line"] = achievement_CongaLine
+    options["friend_ball"] = achievement_FriendBall
+
+    options["doh"] = achievement_Doh
+    options["you_finally_turn_green"] = achievement_YouFinallyTurnGreen
+    options["pro_gamer"] = achievement_ProGamer
+    options["emancipation_customization"] = achievement_EmancipationCustomization
+    options["cracked_gamer"] = achievement_CrackedGamer
+    options["flash_point"] = achievement_FlashPoint
+
+    options["all_crucifix"] = achievement_SecretCrucifix
+    options["charles_drowned"] = achievement_CharlesDrowned
+
     options["hotel_hell"] = achievement_HotelHell
     options["a_hard_place"] = achievement_AHardPlace
+    options["star_employee"] = achievement_StarEmployee
+    options["storage_wars"] = achievement_StorageWars
+
     options["battle_mode_secrets"] = achievement_BattleModeSecret
     options["battle_mode_hard_secrets"] = achievement_BattleModeCool
     options["parallel_processing"] = achievement_ParallelProcessing
@@ -275,10 +380,9 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["daily_runs"] = achievement_DailyRuns
     options["chaos_mode"] = achievement_ChaosMode
 
-    options["all_crucifix"] = achievement_SecretCrucifix
-    options["individual_floor_keys"] = option_IndividualFloorKeys
     options["doorsanity"] = option_Doorsanity
-    options["rooms_doorsanity"] = option_DoorSanityRoomsType
+    options["archives_doorsanity"] = option_DoorSanityArchivesType
+    options["outdoors_doorsanity"] = option_DoorSanityOutdoorsType
     options["deathsanity"] = option_Deathsanity
     options["glitch_deathsanity"] = option_DeathsanityGlitch
     options["duplicate_deathsanity"] = option_DeathsanityMainDuplicates

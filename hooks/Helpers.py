@@ -35,29 +35,30 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item: "ManualIte
 def before_is_location_enabled(multiworld: MultiWorld, player: int, location: "ManualLocation") -> Optional[bool]:
     options = multiworld.worlds[player].options
 
+    if "secret_HundredOfMany" in location["category"]:
+        if options.hundred_of_many == "disabled":
+            return False
+
+    if "disable_Uptime" in location["category"]:
+        if options.uptime == "disabled":
+            return False
+
     if not options.doorsanity:
         if "doorsanity" in location["category"]:
             return False
 
-    if "Doorsanity (Mines)" in location["category"]:
-        # if not options.floor_2:
-        #    return False
-        # else:
-        return True
-
-    if "Doorsanity (Rooms)" in location["category"]:
-        if not options.a_1000 and "veryhigh_doorsanity" in location["category"]:
+    if "Doorsanity - The Archives" in location["category"]:
+        if options.archives_doorsanity != "all_checks" and "archives_allsectors" in location["category"]:
             return False
-        else:
-            if options.rooms_doorsanity == "all_checks":
-                return True
-            elif options.rooms_doorsanity == "limited":
-                if not "notsimple_doorsanity" in location["category"]:
-                    return True
-                else:
-                    return False
-            elif options.rooms_doorsanity == "no_checks":
-                return False
+        elif options.archives_doorsanity != "300_checks" and "archives_short" in location["category"]:
+            return False
+
+    if "Doorsanity - The Outdoors" in location["category"]:
+        if options.outdoors_doorsanity != "distance_checks" and "outdoors_distance" in location["category"]:
+            return False
+        elif options.outdoors_doorsanity != "door_checks" and "outdoors_doors" in location["category"]:
+            return False
+
             
     if not options.deathsanity:
         if "disable_Deathsanity" in location["category"]:
