@@ -51,7 +51,7 @@
         {"name": "Helping Hand", 				"region": "The Mines 0", "category": [ "Achievements - Entities", "multiplayer_HelpingHand" ], "requires": ""},
         {"name": "Trickshot", 					"region": "The Mines 0", "category": [ "Achievements - Entities" ], "requires": "|Glowstick|"},
         {"name": "Trade Offer", 				"region": "The Mines 1", "category": [ "Achievements - Entities" ], "requires": "|@Items:1|"},
-        {"name": "Sshh!", 						"region": "The Hotel 1", "category": [ "Achievements - Entities" ], "requires": ""},
+        {"name": "Sshh!", 						"region": "The Hotel 0", "category": [ "Achievements - Entities" ], "requires": ""},
         {"name": "Supporting Small Businesses",	"region": "Floor Prog 1", "category": [ "Achievements - Entities" ], "requires": ""},
         {"name": "Pls Donate", 					"region": "Floor Prog 1",   "category": [ "Achievements - Entities" ], "requires": ""},
         {"name": "Meet Timothy", 				"region": "Floor Prog 2",   "category": [ "Achievements - Entities", "secret_MeetTimothy" ], "requires": ""},
